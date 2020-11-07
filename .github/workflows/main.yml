@@ -1,0 +1,34 @@
+---
+name: CI
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+  repository_dispatch:
+    types: rebuild
+
+jobs:
+  containers:
+    name: "Container ${{ matrix.distro }}"
+    runs-on: "ubuntu-latest"
+    strategy:
+      matrix:
+        distro: ["alpine", "archlinux", "debian-buster", "fedora-33", "gentoo", "opensuse-tumbleweed", "rhel8-ubi", "ubuntu-focal"]
+    steps:
+      - uses: "actions/checkout@v2"
+      - name: "Create artifect store"
+        run: mkdir /result
+      - name: "Build container ${{ matrix.distro }}"
+        run: |
+           set -xe
+           docker build -f Dockerfile.${{ matrix.distro }} -t truststore:${{ matrix.distro }}
+      - name: "Run container ${{ matrix.distro }}"
+        run: |
+          set -xe
+          docker run -v /result:/result truststore:${{ matrix.distro }}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: result
+          path: /result/result.json

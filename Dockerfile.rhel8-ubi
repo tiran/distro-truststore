@@ -1,0 +1,9 @@
+FROM ubi8/ubi-minimal
+RUN microdnf update -y && \
+    microdnf install -y python3 && \
+    microdnf clean all
+
+VOLUME /result
+COPY check_openssl_conf.py /
+RUN /check_openssl_conf.py
+ENTRYPOINT /check_openssl_conf.py > /result/result.json

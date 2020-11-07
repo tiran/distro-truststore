@@ -1,0 +1,7 @@
+FROM opensuse/tumbleweed:latest
+RUN zypper install -y python3
+
+VOLUME /result
+COPY check_openssl_conf.py /
+RUN /check_openssl_conf.py
+ENTRYPOINT /check_openssl_conf.py > /result/result.json

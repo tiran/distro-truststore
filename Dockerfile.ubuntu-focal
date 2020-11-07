@@ -1,0 +1,9 @@
+FROM ubuntu:focal
+RUN apt update && \
+    apt install -y python3 ca-certificates && \
+    apt clean
+
+VOLUME /result
+COPY check_openssl_conf.py /
+RUN /check_openssl_conf.py
+ENTRYPOINT /check_openssl_conf.py > /result/result.json

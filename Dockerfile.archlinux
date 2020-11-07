@@ -1,0 +1,7 @@
+FROM archlinux:latest
+RUN pacman -Sy && pacman --noconfirm -S python3
+
+VOLUME /result
+COPY check_openssl_conf.py /
+RUN /check_openssl_conf.py
+ENTRYPOINT /check_openssl_conf.py > /result/result.json

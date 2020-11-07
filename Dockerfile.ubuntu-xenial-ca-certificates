@@ -1,0 +1,8 @@
+FROM ubuntu:xenial
+RUN apt update && \
+    apt install -y python3 ca-certificates && \
+    apt clean
+
+COPY check_openssl_conf.py /
+RUN /check_openssl_conf.py
+ENTRYPOINT /check_openssl_conf.py

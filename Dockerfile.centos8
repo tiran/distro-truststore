@@ -1,0 +1,8 @@
+FROM centos:8
+RUN dnf update -y && \
+    dnf install -y python3 && \
+    dnf clean all
+
+COPY check_openssl_conf.py /
+RUN /check_openssl_conf.py
+ENTRYPOINT /check_openssl_conf.py

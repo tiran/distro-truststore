@@ -1,0 +1,67 @@
+---
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  repository_dispatch:
+    types: rebuild
+  workflow_dispatch:
+    inputs:
+      git-ref:
+        required: false
+
+jobs:
+  distros:
+    name: "Container ${{ matrix.distro }}"
+    runs-on: "ubuntu-latest"
+    strategy:
+      fail-fast: false
+      matrix:
+        distro: [
+          "alpine",
+          "archlinux",
+          "centos8",
+          "debian-buster-ca-certificates", "debian-buster", "debian-testing-ca-certificates",
+          "fedora-32", "fedora-33",
+          "gentoo",
+          "opensuse-tumbleweed",
+          "openwrt",
+          "rhel8-ubi",
+          "ubuntu-xenial-ca-certificates", "ubuntu-bionic-ca-certificates", "ubuntu-focal-ca-certificates", "ubuntu-focal"
+        ]
+    steps:
+      - name: checkout
+        uses: "actions/checkout@v2"
+      - name: "Build container ${{ matrix.distro }}"
+        run: |
+           set -xe
+           docker build tools -f Dockerfile.${{ matrix.distro }} -t truststore:${{ matrix.distro }}
+      - name: "Run container ${{ matrix.distro }}"
+        run: |
+          set -xe
+          docker run truststore:${{ matrix.distro }} | tee result-${{ matrix.distro }}.json
+      - uses: actions/upload-artifact@v2
+        with:
+          name: result
+          path: result-${{ matrix.distro }}.json
+
+  analyze:
+    name: "Analyze results"
+    runs-on: "ubuntu-latest"
+    needs: distros
+    steps:
+      - name: checkout
+        uses: "actions/checkout@v2"
+      - name: Download results
+        uses: actions/download-artifact@v2
+        with:
+          name: result
+      - name: "Run analyze script"
+        run: tools/analyze_results.py | tee analyzed.json
+      - uses: actions/upload-artifact@v2
+        with:
+          name: analyzed
+          path: analyzed.json

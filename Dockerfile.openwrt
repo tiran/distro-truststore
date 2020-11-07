@@ -1,0 +1,8 @@
+FROM openwrtorg/rootfs:x86-64
+RUN mkdir -p /var/lock && \
+    opkg update && \
+    opkg install python3
+
+COPY check_openssl_conf.py /
+RUN /check_openssl_conf.py
+ENTRYPOINT /check_openssl_conf.py

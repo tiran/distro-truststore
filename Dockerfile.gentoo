@@ -1,0 +1,5 @@
+FROM gentoo/stage3:latest
+
+COPY check_openssl_conf.py /
+RUN /check_openssl_conf.py
+ENTRYPOINT /check_openssl_conf.py

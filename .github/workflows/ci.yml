@@ -49,10 +49,34 @@ jobs:
           name: result
           path: result-${{ matrix.distro }}.json
 
+  freebsd:
+    runs-on: macos-latest
+    name: FreeBSD with ca_root_nss
+    strategy:
+      fail-fast: false
+    steps:
+      - name: checkout
+        uses: "actions/checkout@v2"
+      - name: Run test in FreeBSD VM
+        uses: vmactions/freebsd-vm@v0.0.8
+        with:
+          usesh: true
+          prepare: pkg install -y python3 ca_root_nss
+          run: |
+            ./tools/check_openssl_conf.py > result-freebsd-ca_root_nss.json
+      - name: Show results
+        run: cat result-freebsd-ca_root_nss.json
+      - uses: actions/upload-artifact@v2
+        with:
+          name: result
+          path: result-freebsd-ca_root_nss.json
+
   analyze:
     name: "Analyze results"
     runs-on: "ubuntu-latest"
-    needs: distros
+    needs:
+      - distros
+      - freebsd
     steps:
       - name: checkout
         uses: "actions/checkout@v2"

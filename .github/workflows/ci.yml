@@ -27,6 +27,7 @@ jobs:
           "debian-buster-ca-certificates", "debian-buster", "debian-testing-ca-certificates",
           "fedora-32", "fedora-33",
           "gentoo",
+          "linuxmint-193",
           "opensuse-tumbleweed",
           "openwrt",
           "rhel8-ubi",

@@ -1,0 +1,184 @@
+{
+  "candidates_cafile": {
+    "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/cacert.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/cacert.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/certs/ca-bundle.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/certs/ca-bundle.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/certs/ca-bundle.trust.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/certs/ca-bundle.trust.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/ca-bundle.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/ca-bundle.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/cert.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/cert.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-bundle.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/certs/ca-bundle.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-bundle.trust.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/certs/ca-bundle.trust.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-certificates.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/certs/ca-certificates.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    }
+  },
+  "candidates_openssldir": {
+    "/etc/pki/tls": {
+      "valid": false
+    },
+    "/etc/ssl": {
+      "valid": false
+    }
+  },
+  "default_context": {
+    "ca_certs_count": 354,
+    "ciphers": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLS_CHACHA20_POLY1305_SHA256",
+      "TLS_AES_128_GCM_SHA256",
+      "ECDHE-ECDSA-AES256-GCM-SHA384",
+      "ECDHE-RSA-AES256-GCM-SHA384",
+      "DHE-RSA-AES256-GCM-SHA384",
+      "ECDHE-ECDSA-CHACHA20-POLY1305",
+      "ECDHE-RSA-CHACHA20-POLY1305",
+      "DHE-RSA-CHACHA20-POLY1305",
+      "ECDHE-ECDSA-AES128-GCM-SHA256",
+      "ECDHE-RSA-AES128-GCM-SHA256",
+      "DHE-RSA-AES128-GCM-SHA256",
+      "ECDHE-ECDSA-AES256-SHA384",
+      "ECDHE-RSA-AES256-SHA384",
+      "DHE-RSA-AES256-SHA256",
+      "ECDHE-ECDSA-AES128-SHA256",
+      "ECDHE-RSA-AES128-SHA256",
+      "DHE-RSA-AES128-SHA256",
+      "ECDHE-ECDSA-AES256-SHA",
+      "ECDHE-RSA-AES256-SHA",
+      "DHE-RSA-AES256-SHA",
+      "ECDHE-ECDSA-AES128-SHA",
+      "ECDHE-RSA-AES128-SHA",
+      "DHE-RSA-AES128-SHA",
+      "AES256-GCM-SHA384",
+      "AES128-GCM-SHA256",
+      "AES256-SHA256",
+      "AES128-SHA256",
+      "AES256-SHA",
+      "AES128-SHA"
+    ],
+    "maximum_version": "MAXIMUM_SUPPORTED",
+    "minimum_version": "MINIMUM_SUPPORTED",
+    "options_repr": "<Options.OP_NO_SSLv3|OP_CIPHER_SERVER_PREFERENCE|OP_ENABLE_MIDDLEBOX_COMPAT|OP_NO_COMPRESSION|OP_ALL: -2108555180>",
+    "verify_flags_repr": "<VerifyFlags.VERIFY_X509_TRUSTED_FIRST: 32768>"
+  },
+  "default_verify": {
+    "cafile": {
+      "certs": 0,
+      "exists": false,
+      "path": null,
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "capath": {
+      "certs": 0,
+      "exists": false,
+      "path": null,
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "default_verify_paths": {
+      "cafile": null,
+      "capath": null,
+      "openssl_cafile": "C:\\Program Files\\Common Files\\SSL/cert.pem",
+      "openssl_cafile_env": "SSL_CERT_FILE",
+      "openssl_capath": "C:\\Program Files\\Common Files\\SSL/certs",
+      "openssl_capath_env": "SSL_CERT_DIR"
+    },
+    "openssl_conf": {
+      "certs": 0,
+      "exists": true,
+      "path": "C:\\Program Files\\Common Files\\SSL\\openssl.cnf",
+      "resolved": "C:\\Program Files\\Common Files\\SSL\\openssl.cnf",
+      "size": 10998,
+      "type": "file"
+    },
+    "truststore": false
+  },
+  "openssl": {
+    "version": "OpenSSL 1.1.1g  21 Apr 2020",
+    "version_info": [
+      1,
+      1,
+      1,
+      7,
+      15
+    ]
+  },
+  "os_info": {
+    "os_name": "nt",
+    "platform": "Windows-10-10.0.17763-SP0",
+    "sys_platform": "win32"
+  },
+  "python": {
+    "version": "3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]",
+    "version_info": [
+      3,
+      8,
+      6,
+      "final",
+      0
+    ]
+  },
+  "timestamp": "2020-11-09T15:45:28Z"
+}

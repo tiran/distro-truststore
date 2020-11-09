@@ -1,0 +1,224 @@
+{
+  "candidates_cafile": {
+    "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/cacert.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/cacert.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/certs/ca-bundle.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/certs/ca-bundle.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/certs/ca-bundle.trust.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/certs/ca-bundle.trust.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/ca-bundle.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/ca-bundle.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/cert.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/cert.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-bundle.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/certs/ca-bundle.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-bundle.trust.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/certs/ca-bundle.trust.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-certificates.crt": {
+      "certs": 138,
+      "exists": true,
+      "path": "/etc/ssl/certs/ca-certificates.crt",
+      "resolved": "/etc/ssl/certs/ca-certificates.crt",
+      "size": 213054,
+      "type": "file"
+    }
+  },
+  "candidates_openssldir": {
+    "/etc/pki/tls": {
+      "valid": false
+    },
+    "/etc/ssl": {
+      "cafile": {
+        "certs": 0,
+        "exists": false,
+        "path": "/etc/ssl/cert.pem",
+        "resolved": null,
+        "size": 0,
+        "type": null
+      },
+      "capath": {
+        "certs": 138,
+        "exists": true,
+        "path": "/etc/ssl/certs",
+        "resolved": "/etc/ssl/certs",
+        "size": 277,
+        "type": "dir"
+      },
+      "openssl_conf": {
+        "certs": 0,
+        "exists": true,
+        "path": "/etc/ssl/openssl.cnf",
+        "resolved": "/etc/ssl/openssl.cnf",
+        "size": 10909,
+        "type": "file"
+      },
+      "valid": true
+    }
+  },
+  "default_context": {
+    "ca_certs_count": 0,
+    "ciphers": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLS_CHACHA20_POLY1305_SHA256",
+      "TLS_AES_128_GCM_SHA256",
+      "ECDHE-ECDSA-AES256-GCM-SHA384",
+      "ECDHE-RSA-AES256-GCM-SHA384",
+      "DHE-RSA-AES256-GCM-SHA384",
+      "ECDHE-ECDSA-CHACHA20-POLY1305",
+      "ECDHE-RSA-CHACHA20-POLY1305",
+      "DHE-RSA-CHACHA20-POLY1305",
+      "ECDHE-ECDSA-AES128-GCM-SHA256",
+      "ECDHE-RSA-AES128-GCM-SHA256",
+      "DHE-RSA-AES128-GCM-SHA256",
+      "ECDHE-ECDSA-AES256-SHA384",
+      "ECDHE-RSA-AES256-SHA384",
+      "DHE-RSA-AES256-SHA256",
+      "ECDHE-ECDSA-AES128-SHA256",
+      "ECDHE-RSA-AES128-SHA256",
+      "DHE-RSA-AES128-SHA256",
+      "ECDHE-ECDSA-AES256-SHA",
+      "ECDHE-RSA-AES256-SHA",
+      "DHE-RSA-AES256-SHA",
+      "ECDHE-ECDSA-AES128-SHA",
+      "ECDHE-RSA-AES128-SHA",
+      "DHE-RSA-AES128-SHA",
+      "AES256-GCM-SHA384",
+      "AES128-GCM-SHA256",
+      "AES256-SHA256",
+      "AES128-SHA256",
+      "AES256-SHA",
+      "AES128-SHA"
+    ],
+    "maximum_version": "MAXIMUM_SUPPORTED",
+    "minimum_version": "MINIMUM_SUPPORTED",
+    "options_repr": "<Options.OP_ALL|OP_NO_SSLv3|OP_CIPHER_SERVER_PREFERENCE|OP_ENABLE_MIDDLEBOX_COMPAT|OP_NO_COMPRESSION: 2186412116>",
+    "verify_flags_repr": "<VerifyFlags.VERIFY_X509_TRUSTED_FIRST: 32768>"
+  },
+  "default_verify": {
+    "cafile": {
+      "certs": 0,
+      "exists": false,
+      "path": null,
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "capath": {
+      "certs": 138,
+      "exists": true,
+      "path": "/usr/lib/ssl/certs",
+      "resolved": "/etc/ssl/certs",
+      "size": 277,
+      "type": "dir"
+    },
+    "default_verify_paths": {
+      "cafile": null,
+      "capath": "/usr/lib/ssl/certs",
+      "openssl_cafile": "/usr/lib/ssl/cert.pem",
+      "openssl_cafile_env": "SSL_CERT_FILE",
+      "openssl_capath": "/usr/lib/ssl/certs",
+      "openssl_capath_env": "SSL_CERT_DIR"
+    },
+    "openssl_conf": {
+      "certs": 0,
+      "exists": true,
+      "path": "/usr/lib/ssl/openssl.cnf",
+      "resolved": "/etc/ssl/openssl.cnf",
+      "size": 10909,
+      "type": "file"
+    },
+    "truststore": true
+  },
+  "openssl": {
+    "version": "OpenSSL 1.1.1f  31 Mar 2020",
+    "version_info": [
+      1,
+      1,
+      1,
+      6,
+      15
+    ]
+  },
+  "os_info": {
+    "os-release": {
+      "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+      "HOME_URL": "https://www.ubuntu.com/",
+      "ID": "ubuntu",
+      "ID_LIKE": [
+        "debian"
+      ],
+      "NAME": "Ubuntu",
+      "PRETTY_NAME": "Ubuntu 20.04.1 LTS",
+      "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+      "SUPPORT_URL": "https://help.ubuntu.com/",
+      "UBUNTU_CODENAME": "focal",
+      "VERSION": "20.04.1 LTS (Focal Fossa)",
+      "VERSION_CODENAME": "focal",
+      "VERSION_ID": "20.04"
+    },
+    "os_name": "posix",
+    "platform": "Linux-5.4.0-1031-azure-x86_64-with-glibc2.29",
+    "sys_platform": "linux"
+  },
+  "python": {
+    "version": "3.8.5 (default, Jul 28 2020, 12:59:40) \n[GCC 9.3.0]",
+    "version_info": [
+      3,
+      8,
+      5,
+      "final",
+      0
+    ]
+  },
+  "timestamp": "2020-11-09T15:45:07Z"
+}

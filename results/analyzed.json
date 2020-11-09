@@ -1,0 +1,303 @@
+{
+  "alpine": {
+    "default_context_ca_certs_count": 137,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/etc/ssl/cert.pem",
+      "cafile_valid": true,
+      "capath": "/etc/ssl/certs",
+      "capath_valid": false
+    },
+    "openssl_version": "OpenSSL 1.1.1g  21 Apr 2020",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  },
+  "archlinux": {
+    "default_context_ca_certs_count": 138,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/etc/ssl/cert.pem",
+      "cafile_valid": true,
+      "capath": "/etc/ssl/certs",
+      "capath_valid": true
+    },
+    "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  },
+  "centos8": {
+    "default_context_ca_certs_count": 136,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/etc/pki/tls/cert.pem",
+      "cafile_valid": true,
+      "capath": "/etc/pki/tls/certs",
+      "capath_valid": false
+    },
+    "openssl_version": "OpenSSL 1.1.1c FIPS  28 May 2019",
+    "openssldirs": [
+      "/etc/pki/tls"
+    ]
+  },
+  "debian-buster": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": null,
+    "openssl_version": "OpenSSL 1.1.1d  10 Sep 2019",
+    "openssldirs": []
+  },
+  "debian-buster-ca-certificates": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": {
+      "cafile": null,
+      "cafile_valid": false,
+      "capath": "/usr/lib/ssl/certs",
+      "capath_valid": true
+    },
+    "openssl_version": "OpenSSL 1.1.1d  10 Sep 2019",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  },
+  "debian-testing": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": null,
+    "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "openssldirs": []
+  },
+  "debian-testing-ca-certificates": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": {
+      "cafile": null,
+      "cafile_valid": false,
+      "capath": "/usr/lib/ssl/certs",
+      "capath_valid": true
+    },
+    "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  },
+  "fedora-32": {
+    "default_context_ca_certs_count": 136,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/etc/pki/tls/cert.pem",
+      "cafile_valid": true,
+      "capath": "/etc/pki/tls/certs",
+      "capath_valid": false
+    },
+    "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
+    "openssldirs": [
+      "/etc/pki/tls"
+    ]
+  },
+  "fedora-33": {
+    "default_context_ca_certs_count": 136,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/etc/pki/tls/cert.pem",
+      "cafile_valid": true,
+      "capath": "/etc/pki/tls/certs",
+      "capath_valid": false
+    },
+    "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
+    "openssldirs": [
+      "/etc/pki/tls"
+    ]
+  },
+  "fedora-34": {
+    "default_context_ca_certs_count": 136,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/etc/pki/tls/cert.pem",
+      "cafile_valid": true,
+      "capath": "/etc/pki/tls/certs",
+      "capath_valid": false
+    },
+    "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
+    "openssldirs": [
+      "/etc/pki/tls"
+    ]
+  },
+  "fedora-rawhide": {
+    "default_context_ca_certs_count": 136,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/etc/pki/tls/cert.pem",
+      "cafile_valid": true,
+      "capath": "/etc/pki/tls/certs",
+      "capath_valid": false
+    },
+    "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
+    "openssldirs": [
+      "/etc/pki/tls"
+    ]
+  },
+  "freebsd-ca_root_nss": {
+    "default_context_ca_certs_count": 148,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/etc/ssl/cert.pem",
+      "cafile_valid": true,
+      "capath": null,
+      "capath_valid": false
+    },
+    "openssl_version": "OpenSSL 1.1.1d-freebsd  10 Sep 2019",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  },
+  "gentoo": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": {
+      "cafile": null,
+      "cafile_valid": false,
+      "capath": "/etc/ssl/certs",
+      "capath_valid": true
+    },
+    "openssl_version": "OpenSSL 1.1.1g  21 Apr 2020",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  },
+  "linuxmint-193": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": {
+      "cafile": null,
+      "cafile_valid": false,
+      "capath": "/usr/lib/ssl/certs",
+      "capath_valid": true
+    },
+    "openssl_version": "OpenSSL 1.1.1  11 Sep 2018",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  },
+  "opensuse-tumbleweed": {
+    "default_context_ca_certs_count": 138,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/var/lib/ca-certificates/ca-bundle.pem",
+      "cafile_valid": true,
+      "capath": "/var/lib/ca-certificates/openssl",
+      "capath_valid": true
+    },
+    "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  },
+  "openwrt": {
+    "default_context_ca_certs_count": 126,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/etc/ssl/cert.pem",
+      "cafile_valid": true,
+      "capath": "/etc/ssl/certs",
+      "capath_valid": false
+    },
+    "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  },
+  "os-macos-latest-3.8": {
+    "default_context_ca_certs_count": 164,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/usr/local/etc/openssl/cert.pem",
+      "cafile_valid": true,
+      "capath": "/usr/local/etc/openssl/certs",
+      "capath_valid": false
+    },
+    "openssl_version": "OpenSSL 1.0.2t  10 Sep 2019",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  },
+  "os-windows-latest-3.8": {
+    "default_context_ca_certs_count": 354,
+    "default_context_can_verify": true,
+    "default_verify_paths": null,
+    "openssl_version": "OpenSSL 1.1.1g  21 Apr 2020",
+    "openssldirs": []
+  },
+  "rhel8-ubi": {
+    "default_context_ca_certs_count": 136,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/etc/pki/tls/cert.pem",
+      "cafile_valid": true,
+      "capath": "/etc/pki/tls/certs",
+      "capath_valid": false
+    },
+    "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
+    "openssldirs": [
+      "/etc/pki/tls"
+    ]
+  },
+  "ubuntu-bionic-ca-certificates": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": {
+      "cafile": null,
+      "cafile_valid": false,
+      "capath": "/usr/lib/ssl/certs",
+      "capath_valid": true
+    },
+    "openssl_version": "OpenSSL 1.1.1  11 Sep 2018",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  },
+  "ubuntu-focal": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": null,
+    "openssl_version": "OpenSSL 1.1.1f  31 Mar 2020",
+    "openssldirs": []
+  },
+  "ubuntu-focal-ca-certificates": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": {
+      "cafile": null,
+      "cafile_valid": false,
+      "capath": "/usr/lib/ssl/certs",
+      "capath_valid": true
+    },
+    "openssl_version": "OpenSSL 1.1.1f  31 Mar 2020",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  },
+  "ubuntu-groovy": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": null,
+    "openssl_version": "OpenSSL 1.1.1f  31 Mar 2020",
+    "openssldirs": []
+  },
+  "ubuntu-xenial-ca-certificates": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": {
+      "cafile": null,
+      "cafile_valid": false,
+      "capath": "/usr/lib/ssl/certs",
+      "capath_valid": true
+    },
+    "openssl_version": "OpenSSL 1.0.2g  1 Mar 2016",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
+  }
+}

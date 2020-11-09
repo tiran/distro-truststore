@@ -1,0 +1,287 @@
+{
+  "candidates_cafile": {
+    "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem": {
+      "certs": 136,
+      "exists": true,
+      "path": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+      "resolved": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+      "size": 216090,
+      "type": "file"
+    },
+    "/etc/pki/tls/cacert.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/cacert.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/certs/ca-bundle.crt": {
+      "certs": 136,
+      "exists": true,
+      "path": "/etc/pki/tls/certs/ca-bundle.crt",
+      "resolved": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+      "size": 216090,
+      "type": "file"
+    },
+    "/etc/pki/tls/certs/ca-bundle.trust.crt": {
+      "certs": 149,
+      "exists": true,
+      "path": "/etc/pki/tls/certs/ca-bundle.trust.crt",
+      "resolved": "/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt",
+      "size": 249827,
+      "type": "file"
+    },
+    "/etc/ssl/ca-bundle.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/ca-bundle.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/cert.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/cert.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-bundle.crt": {
+      "certs": 136,
+      "exists": true,
+      "path": "/etc/ssl/certs/ca-bundle.crt",
+      "resolved": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+      "size": 216090,
+      "type": "file"
+    },
+    "/etc/ssl/certs/ca-bundle.trust.crt": {
+      "certs": 149,
+      "exists": true,
+      "path": "/etc/ssl/certs/ca-bundle.trust.crt",
+      "resolved": "/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt",
+      "size": 249827,
+      "type": "file"
+    },
+    "/etc/ssl/certs/ca-certificates.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/certs/ca-certificates.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    }
+  },
+  "candidates_openssldir": {
+    "/etc/pki/tls": {
+      "cafile": {
+        "certs": 136,
+        "exists": true,
+        "path": "/etc/pki/tls/cert.pem",
+        "resolved": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+        "size": 216090,
+        "type": "file"
+      },
+      "capath": {
+        "certs": 0,
+        "exists": true,
+        "path": "/etc/pki/tls/certs",
+        "resolved": "/etc/pki/tls/certs",
+        "size": 2,
+        "type": "dir"
+      },
+      "openssl_conf": {
+        "certs": 0,
+        "exists": true,
+        "path": "/etc/pki/tls/openssl.cnf",
+        "resolved": "/etc/pki/tls/openssl.cnf",
+        "size": 11227,
+        "type": "file"
+      },
+      "valid": true
+    },
+    "/etc/ssl": {
+      "cafile": {
+        "certs": 0,
+        "exists": false,
+        "path": "/etc/ssl/cert.pem",
+        "resolved": null,
+        "size": 0,
+        "type": null
+      },
+      "capath": {
+        "certs": 0,
+        "exists": true,
+        "path": "/etc/ssl/certs",
+        "resolved": "/etc/ssl/pki/tls/certs",
+        "size": 2,
+        "type": "dir"
+      },
+      "openssl_conf": {
+        "certs": 0,
+        "exists": false,
+        "path": "/etc/ssl/openssl.cnf",
+        "resolved": null,
+        "size": 0,
+        "type": null
+      },
+      "valid": false
+    }
+  },
+  "default_context": {
+    "ca_certs_count": 136,
+    "ciphers": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLS_CHACHA20_POLY1305_SHA256",
+      "TLS_AES_128_GCM_SHA256",
+      "TLS_AES_128_CCM_SHA256",
+      "ECDHE-ECDSA-AES256-GCM-SHA384",
+      "ECDHE-RSA-AES256-GCM-SHA384",
+      "ECDHE-ECDSA-CHACHA20-POLY1305",
+      "ECDHE-RSA-CHACHA20-POLY1305",
+      "ECDHE-ECDSA-AES256-CCM",
+      "ECDHE-ECDSA-AES128-GCM-SHA256",
+      "ECDHE-RSA-AES128-GCM-SHA256",
+      "ECDHE-ECDSA-AES128-CCM",
+      "ECDHE-ECDSA-AES128-SHA256",
+      "ECDHE-RSA-AES128-SHA256",
+      "ECDHE-ECDSA-AES256-SHA",
+      "ECDHE-RSA-AES256-SHA",
+      "ECDHE-ECDSA-AES128-SHA",
+      "ECDHE-RSA-AES128-SHA",
+      "AES256-GCM-SHA384",
+      "AES256-CCM",
+      "AES128-GCM-SHA256",
+      "AES128-CCM",
+      "AES256-SHA256",
+      "AES128-SHA256",
+      "AES256-SHA",
+      "AES128-SHA",
+      "DHE-RSA-AES256-GCM-SHA384",
+      "DHE-RSA-CHACHA20-POLY1305",
+      "DHE-RSA-AES256-CCM",
+      "DHE-RSA-AES128-GCM-SHA256",
+      "DHE-RSA-AES128-CCM",
+      "DHE-RSA-AES256-SHA256",
+      "DHE-RSA-AES128-SHA256",
+      "DHE-RSA-AES256-SHA",
+      "DHE-RSA-AES128-SHA",
+      "PSK-AES256-GCM-SHA384",
+      "PSK-CHACHA20-POLY1305",
+      "PSK-AES256-CCM",
+      "PSK-AES128-GCM-SHA256",
+      "PSK-AES128-CCM",
+      "PSK-AES256-CBC-SHA",
+      "PSK-AES128-CBC-SHA256",
+      "PSK-AES128-CBC-SHA",
+      "DHE-PSK-AES256-GCM-SHA384",
+      "DHE-PSK-CHACHA20-POLY1305",
+      "DHE-PSK-AES256-CCM",
+      "DHE-PSK-AES128-GCM-SHA256",
+      "DHE-PSK-AES128-CCM",
+      "DHE-PSK-AES256-CBC-SHA",
+      "DHE-PSK-AES128-CBC-SHA256",
+      "DHE-PSK-AES128-CBC-SHA",
+      "ECDHE-PSK-CHACHA20-POLY1305",
+      "ECDHE-PSK-AES256-CBC-SHA",
+      "ECDHE-PSK-AES128-CBC-SHA256",
+      "ECDHE-PSK-AES128-CBC-SHA",
+      "RSA-PSK-AES256-GCM-SHA384",
+      "RSA-PSK-CHACHA20-POLY1305",
+      "RSA-PSK-AES128-GCM-SHA256",
+      "RSA-PSK-AES256-CBC-SHA",
+      "RSA-PSK-AES128-CBC-SHA256",
+      "RSA-PSK-AES128-CBC-SHA"
+    ],
+    "maximum_version": "TLSv1_3",
+    "minimum_version": "TLSv1_2",
+    "options_repr": "<Options.OP_ALL|OP_NO_SSLv3|OP_CIPHER_SERVER_PREFERENCE|OP_ENABLE_MIDDLEBOX_COMPAT|OP_NO_COMPRESSION: 2186412116>",
+    "verify_flags_repr": "<VerifyFlags.VERIFY_X509_TRUSTED_FIRST: 32768>"
+  },
+  "default_verify": {
+    "cafile": {
+      "certs": 136,
+      "exists": true,
+      "path": "/etc/pki/tls/cert.pem",
+      "resolved": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+      "size": 216090,
+      "type": "file"
+    },
+    "capath": {
+      "certs": 0,
+      "exists": true,
+      "path": "/etc/pki/tls/certs",
+      "resolved": "/etc/pki/tls/certs",
+      "size": 2,
+      "type": "dir"
+    },
+    "default_verify_paths": {
+      "cafile": "/etc/pki/tls/cert.pem",
+      "capath": "/etc/pki/tls/certs",
+      "openssl_cafile": "/etc/pki/tls/cert.pem",
+      "openssl_cafile_env": "SSL_CERT_FILE",
+      "openssl_capath": "/etc/pki/tls/certs",
+      "openssl_capath_env": "SSL_CERT_DIR"
+    },
+    "openssl_conf": {
+      "certs": 0,
+      "exists": true,
+      "path": "/etc/pki/tls/openssl.cnf",
+      "resolved": "/etc/pki/tls/openssl.cnf",
+      "size": 11227,
+      "type": "file"
+    },
+    "truststore": true
+  },
+  "openssl": {
+    "version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
+    "version_info": [
+      1,
+      1,
+      1,
+      7,
+      15
+    ]
+  },
+  "os_info": {
+    "os-release": {
+      "ANSI_COLOR": "0;38;2;60;110;180",
+      "BUG_REPORT_URL": "https://bugzilla.redhat.com/",
+      "CPE_NAME": "cpe:/o:fedoraproject:fedora:34",
+      "DOCUMENTATION_URL": "https://docs.fedoraproject.org/en-US/fedora/rawhide/system-administrators-guide/",
+      "HOME_URL": "https://fedoraproject.org/",
+      "ID": "fedora",
+      "ID_LIKE": [],
+      "LOGO": "fedora-logo-icon",
+      "NAME": "Fedora",
+      "PLATFORM_ID": "platform:f34",
+      "PRETTY_NAME": "Fedora 34 (Container Image Prerelease)",
+      "PRIVACY_POLICY_URL": "https://fedoraproject.org/wiki/Legal:PrivacyPolicy",
+      "REDHAT_BUGZILLA_PRODUCT": "Fedora",
+      "REDHAT_BUGZILLA_PRODUCT_VERSION": "rawhide",
+      "REDHAT_SUPPORT_PRODUCT": "Fedora",
+      "REDHAT_SUPPORT_PRODUCT_VERSION": "rawhide",
+      "SUPPORT_URL": "https://fedoraproject.org/wiki/Communicating_and_getting_help",
+      "VARIANT": "Container Image",
+      "VARIANT_ID": "container",
+      "VERSION": "34 (Container Image Prerelease)",
+      "VERSION_CODENAME": "\"\"",
+      "VERSION_ID": "34"
+    },
+    "os_name": "posix",
+    "platform": "Linux-5.4.0-1031-azure-x86_64-with-glibc2.32.9000",
+    "sys_platform": "linux"
+  },
+  "python": {
+    "version": "3.9.0 (default, Oct  6 2020, 00:00:00) \n[GCC 10.2.1 20201005 (Red Hat 10.2.1-5)]",
+    "version_info": [
+      3,
+      9,
+      0,
+      "final",
+      0
+    ]
+  },
+  "timestamp": "2020-11-09T15:45:44Z"
+}

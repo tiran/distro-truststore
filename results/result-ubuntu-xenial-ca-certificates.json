@@ -1,0 +1,189 @@
+{
+  "candidates_cafile": {
+    "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/cacert.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/cacert.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/certs/ca-bundle.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/certs/ca-bundle.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/certs/ca-bundle.trust.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/certs/ca-bundle.trust.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/ca-bundle.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/ca-bundle.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/cert.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/cert.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-bundle.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/certs/ca-bundle.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-bundle.trust.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/certs/ca-bundle.trust.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-certificates.crt": {
+      "certs": 138,
+      "exists": true,
+      "path": "/etc/ssl/certs/ca-certificates.crt",
+      "resolved": "/etc/ssl/certs/ca-certificates.crt",
+      "size": 213054,
+      "type": "file"
+    }
+  },
+  "candidates_openssldir": {
+    "/etc/pki/tls": {
+      "valid": false
+    },
+    "/etc/ssl": {
+      "cafile": {
+        "certs": 0,
+        "exists": false,
+        "path": "/etc/ssl/cert.pem",
+        "resolved": null,
+        "size": 0,
+        "type": null
+      },
+      "capath": {
+        "certs": 276,
+        "exists": true,
+        "path": "/etc/ssl/certs",
+        "resolved": "/etc/ssl/certs",
+        "size": 415,
+        "type": "dir"
+      },
+      "openssl_conf": {
+        "certs": 0,
+        "exists": true,
+        "path": "/etc/ssl/openssl.cnf",
+        "resolved": "/etc/ssl/openssl.cnf",
+        "size": 10835,
+        "type": "file"
+      },
+      "valid": true
+    }
+  },
+  "default_context": {
+    "ca_certs_count": 0,
+    "options_repr": "2197947391",
+    "verify_flags_repr": "32768"
+  },
+  "default_verify": {
+    "cafile": {
+      "certs": 0,
+      "exists": false,
+      "path": null,
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "capath": {
+      "certs": 276,
+      "exists": true,
+      "path": "/usr/lib/ssl/certs",
+      "resolved": "/etc/ssl/certs",
+      "size": 415,
+      "type": "dir"
+    },
+    "default_verify_paths": {
+      "cafile": null,
+      "capath": "/usr/lib/ssl/certs",
+      "openssl_cafile": "/usr/lib/ssl/cert.pem",
+      "openssl_cafile_env": "SSL_CERT_FILE",
+      "openssl_capath": "/usr/lib/ssl/certs",
+      "openssl_capath_env": "SSL_CERT_DIR"
+    },
+    "openssl_conf": {
+      "certs": 0,
+      "exists": true,
+      "path": "/usr/lib/ssl/openssl.cnf",
+      "resolved": "/etc/ssl/openssl.cnf",
+      "size": 10835,
+      "type": "file"
+    },
+    "truststore": true
+  },
+  "openssl": {
+    "version": "OpenSSL 1.0.2g  1 Mar 2016",
+    "version_info": [
+      1,
+      0,
+      2,
+      7,
+      15
+    ]
+  },
+  "os_info": {
+    "os-release": {
+      "BUG_REPORT_URL": "http://bugs.launchpad.net/ubuntu/",
+      "HOME_URL": "http://www.ubuntu.com/",
+      "ID": "ubuntu",
+      "ID_LIKE": [
+        "debian"
+      ],
+      "NAME": "Ubuntu",
+      "PRETTY_NAME": "Ubuntu 16.04.7 LTS",
+      "SUPPORT_URL": "http://help.ubuntu.com/",
+      "UBUNTU_CODENAME": "xenial",
+      "VERSION": "16.04.7 LTS (Xenial Xerus)",
+      "VERSION_CODENAME": "xenial",
+      "VERSION_ID": "16.04"
+    },
+    "os_name": "posix",
+    "platform": "Linux-5.4.0-1031-azure-x86_64-with-Ubuntu-16.04-xenial",
+    "sys_platform": "linux"
+  },
+  "python": {
+    "version": "3.5.2 (default, Oct  7 2020, 17:19:02) \n[GCC 5.4.0 20160609]",
+    "version_info": [
+      3,
+      5,
+      2,
+      "final",
+      0
+    ]
+  },
+  "timestamp": "2020-11-09T15:45:32Z"
+}

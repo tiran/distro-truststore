@@ -1,0 +1,224 @@
+{
+  "candidates_cafile": {
+    "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/cacert.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/cacert.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/certs/ca-bundle.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/certs/ca-bundle.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/pki/tls/certs/ca-bundle.trust.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/pki/tls/certs/ca-bundle.trust.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/ca-bundle.pem": {
+      "certs": 138,
+      "exists": true,
+      "path": "/etc/ssl/ca-bundle.pem",
+      "resolved": "/etc/var/lib/ca-certificates/ca-bundle.pem",
+      "size": 213543,
+      "type": "file"
+    },
+    "/etc/ssl/cert.pem": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/cert.pem",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-bundle.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/certs/ca-bundle.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-bundle.trust.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/certs/ca-bundle.trust.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "/etc/ssl/certs/ca-certificates.crt": {
+      "certs": 0,
+      "exists": false,
+      "path": "/etc/ssl/certs/ca-certificates.crt",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    }
+  },
+  "candidates_openssldir": {
+    "/etc/pki/tls": {
+      "valid": false
+    },
+    "/etc/ssl": {
+      "cafile": {
+        "certs": 0,
+        "exists": false,
+        "path": "/etc/ssl/cert.pem",
+        "resolved": null,
+        "size": 0,
+        "type": null
+      },
+      "capath": {
+        "certs": 276,
+        "exists": true,
+        "path": "/etc/ssl/certs",
+        "resolved": "/etc/var/lib/ca-certificates/pem",
+        "size": 414,
+        "type": "dir"
+      },
+      "openssl_conf": {
+        "certs": 0,
+        "exists": true,
+        "path": "/etc/ssl/openssl.cnf",
+        "resolved": "/etc/ssl/openssl.cnf",
+        "size": 10909,
+        "type": "file"
+      },
+      "valid": true
+    }
+  },
+  "default_context": {
+    "ca_certs_count": 138,
+    "ciphers": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLS_CHACHA20_POLY1305_SHA256",
+      "TLS_AES_128_GCM_SHA256",
+      "ECDHE-ECDSA-AES256-GCM-SHA384",
+      "ECDHE-RSA-AES256-GCM-SHA384",
+      "DHE-RSA-AES256-GCM-SHA384",
+      "ECDHE-ECDSA-CHACHA20-POLY1305",
+      "ECDHE-RSA-CHACHA20-POLY1305",
+      "DHE-RSA-CHACHA20-POLY1305",
+      "ECDHE-ECDSA-AES128-GCM-SHA256",
+      "ECDHE-RSA-AES128-GCM-SHA256",
+      "DHE-RSA-AES128-GCM-SHA256",
+      "ECDHE-ECDSA-AES256-SHA384",
+      "ECDHE-RSA-AES256-SHA384",
+      "DHE-RSA-AES256-SHA256",
+      "ECDHE-ECDSA-AES128-SHA256",
+      "ECDHE-RSA-AES128-SHA256",
+      "DHE-RSA-AES128-SHA256",
+      "ECDHE-ECDSA-AES256-SHA",
+      "ECDHE-RSA-AES256-SHA",
+      "DHE-RSA-AES256-SHA",
+      "ECDHE-ECDSA-AES128-SHA",
+      "ECDHE-RSA-AES128-SHA",
+      "DHE-RSA-AES128-SHA",
+      "AES256-GCM-SHA384",
+      "AES128-GCM-SHA256",
+      "AES256-SHA256",
+      "AES128-SHA256",
+      "AES256-SHA",
+      "AES128-SHA"
+    ],
+    "maximum_version": "MAXIMUM_SUPPORTED",
+    "minimum_version": "MINIMUM_SUPPORTED",
+    "options_repr": "<Options.OP_ALL|OP_NO_SSLv3|OP_CIPHER_SERVER_PREFERENCE|OP_ENABLE_MIDDLEBOX_COMPAT|OP_NO_COMPRESSION: 2186412116>",
+    "verify_flags_repr": "<VerifyFlags.VERIFY_X509_TRUSTED_FIRST: 32768>"
+  },
+  "default_verify": {
+    "cafile": {
+      "certs": 138,
+      "exists": true,
+      "path": "/var/lib/ca-certificates/ca-bundle.pem",
+      "resolved": "/var/lib/ca-certificates/ca-bundle.pem",
+      "size": 213543,
+      "type": "file"
+    },
+    "capath": {
+      "certs": 296,
+      "exists": true,
+      "path": "/var/lib/ca-certificates/openssl",
+      "resolved": "/var/lib/ca-certificates/openssl",
+      "size": 444,
+      "type": "dir"
+    },
+    "default_verify_paths": {
+      "cafile": "/var/lib/ca-certificates/ca-bundle.pem",
+      "capath": "/var/lib/ca-certificates/openssl",
+      "openssl_cafile": "/var/lib/ca-certificates/ca-bundle.pem",
+      "openssl_cafile_env": "SSL_CERT_FILE",
+      "openssl_capath": "/var/lib/ca-certificates/openssl",
+      "openssl_capath_env": "SSL_CERT_DIR"
+    },
+    "openssl_conf": {
+      "certs": 0,
+      "exists": false,
+      "path": "/var/lib/ca-certificates/openssl.cnf",
+      "resolved": null,
+      "size": 0,
+      "type": null
+    },
+    "truststore": true
+  },
+  "openssl": {
+    "version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "version_info": [
+      1,
+      1,
+      1,
+      8,
+      15
+    ]
+  },
+  "os_info": {
+    "os-release": {
+      "ANSI_COLOR": "0;32",
+      "BUG_REPORT_URL": "https://bugs.opensuse.org",
+      "CPE_NAME": "cpe:/o:opensuse:tumbleweed:20201107",
+      "DOCUMENTATION_URL": "https://en.opensuse.org/Portal:Tumbleweed",
+      "HOME_URL": "https://www.opensuse.org/",
+      "ID": "opensuse-tumbleweed",
+      "ID_LIKE": [
+        "opensuse",
+        "suse"
+      ],
+      "LOGO": "distributor-logo",
+      "NAME": "openSUSE Tumbleweed",
+      "PRETTY_NAME": "openSUSE Tumbleweed",
+      "VERSION_ID": "20201107"
+    },
+    "os_name": "posix",
+    "platform": "Linux-5.4.0-1031-azure-x86_64-with-glibc2.2.5",
+    "sys_platform": "linux"
+  },
+  "python": {
+    "version": "3.8.5 (default, Jul 20 2020, 17:41:41) [GCC]",
+    "version_info": [
+      3,
+      8,
+      5,
+      "final",
+      0
+    ]
+  },
+  "timestamp": "2020-11-09T15:45:21Z"
+}

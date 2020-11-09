@@ -135,6 +135,25 @@ def check_cafile_candidates(candidates=CAFILE_CANDIDATES):
     return {candidate: path_info(candidate) for candidate in candidates}
 
 
+def check_default_context():
+    ctx = ssl.create_default_context()
+    result = dict(
+        ca_certs_count=len(ctx.get_ca_certs()),
+        options_repr=repr(ctx.options),
+        verify_flags_repr=repr(ctx.verify_flags),
+    )
+    if hasattr(ctx, "get_ciphers"):
+        result.update(
+            ciphers=[c["name"] for c in ctx.get_ciphers()],
+        )
+    if hasattr(ctx, "minimum_version"):
+        result.update(
+            minimum_version=ctx.minimum_version.name,
+            maximum_version=ctx.maximum_version.name,
+        )
+    return result
+
+
 def get_info():
     vp = ssl.get_default_verify_paths()
     openssl_cnf = os.path.join(
@@ -155,6 +174,7 @@ def get_info():
         openssl_conf=path_info(openssl_cnf),
         openssldir_candidates=check_openssldir_candidates(),
         cafile_candidates=check_cafile_candidates(),
+        default_context=check_default_context(),
         openssl=dict(
             version=ssl.OPENSSL_VERSION,
             version_info=ssl.OPENSSL_VERSION_INFO,

@@ -2,6 +2,7 @@
 import datetime
 import os
 import json
+import platform
 import re
 import ssl
 import sys
@@ -112,6 +113,33 @@ def read_os_release(filenames=("/etc/os-release", "/usr/lib/os-release")):
     return release
 
 
+def os_info():
+    result = dict(
+        sys_platform=sys.platform,
+        os_name=os.name,
+        platform=platform.platform(),
+    )
+    if sys.platform.startswith("linux"):
+        result["os-release"] = read_os_release()
+    return result
+
+
+def check_default_verify():
+    vp = ssl.get_default_verify_paths()
+    openssl_cnf = os.path.join(
+        os.path.dirname(vp.openssl_cafile), "openssl.cnf"
+    )
+    cafile = path_info(vp.cafile)
+    capath = path_info(vp.capath)
+    return dict(
+        default_verify_paths=vp._asdict(),
+        cafile=cafile,
+        capath=capath,
+        truststore=bool(cafile["certs"] or capath["certs"]),
+        openssl_conf=path_info(openssl_cnf),
+    )
+
+
 def check_openssldir_candidates(candidates=OPENSSLDIR_CANDIDATES):
     result = {}
     for candidate in candidates:
@@ -143,9 +171,7 @@ def check_default_context():
         verify_flags_repr=repr(ctx.verify_flags),
     )
     if hasattr(ctx, "get_ciphers"):
-        result.update(
-            ciphers=[c["name"] for c in ctx.get_ciphers()],
-        )
+        result["ciphers"] = [c["name"] for c in ctx.get_ciphers()]
     if hasattr(ctx, "minimum_version"):
         result.update(
             minimum_version=ctx.minimum_version.name,
@@ -155,35 +181,26 @@ def check_default_context():
 
 
 def get_info():
-    vp = ssl.get_default_verify_paths()
-    openssl_cnf = os.path.join(
-        os.path.dirname(vp.openssl_cafile), "openssl.cnf"
-    )
-    cafile = path_info(vp.cafile)
-    capath = path_info(vp.capath)
-
     return dict(
-        os_release=read_os_release(),
-        sys_platform=sys.platform,
-        os_name=os.name,
+        os_info=os_info(),
         timestamp=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
-        default_verify_paths=vp._asdict(),
-        cafile=cafile,
-        capath=capath,
-        truststore=bool(cafile["certs"] or capath["certs"]),
-        openssl_conf=path_info(openssl_cnf),
-        openssldir_candidates=check_openssldir_candidates(),
-        cafile_candidates=check_cafile_candidates(),
         default_context=check_default_context(),
+        default_verify=check_default_verify(),
+        candidates_openssldir=check_openssldir_candidates(),
+        candidates_cafile=check_cafile_candidates(),
         openssl=dict(
             version=ssl.OPENSSL_VERSION,
             version_info=ssl.OPENSSL_VERSION_INFO,
+        ),
+        python=dict(
+            version=sys.version,
+            version_info=list(sys.version_info),
         ),
     )
 
 
 def main():
-    json.dump(get_info(), sys.stdout, indent=2, sort_keys=False)
+    json.dump(get_info(), sys.stdout, indent=2, sort_keys=True)
 
 
 if __name__ == "__main__":

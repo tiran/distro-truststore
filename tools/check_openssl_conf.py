@@ -26,6 +26,7 @@ _osrelease_line = re.compile(
 )
 
 OPENSSLDIR_CANDIDATES = ("/etc/ssl", "/etc/pki/tls")
+
 CAFILE_CANDIDATES = [
     # Taken from https://golang.org/src/crypto/x509/root_linux.go
     # and PyOpenSSL
@@ -38,6 +39,8 @@ CAFILE_CANDIDATES = [
     "/etc/ssl/certs/ca-bundle.crt",
     "/etc/ssl/certs/ca-bundle.trust.crt",
     "/etc/pki/tls/certs/ca-bundle.trust.crt",
+    # OpenSSL default?
+    "/etc/ssl/cert.pem",
 ]
 
 

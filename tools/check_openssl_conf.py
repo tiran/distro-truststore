@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import datetime
 import os
 import json
 import re
@@ -23,6 +24,31 @@ _osrelease_line = re.compile(
     "(?P<quote>[\"']?)(?P<value>.+)(?P=quote)$"
 )
 
+OPENSSLDIR_CANDIDATES = ("/etc/ssl", "/etc/pki/tls")
+CAFILE_CANDIDATES = [
+    # Taken from https://golang.org/src/crypto/x509/root_linux.go
+    # and PyOpenSSL
+    "/etc/ssl/certs/ca-certificates.crt",  # Debian/Ubuntu/Gentoo etc.
+    "/etc/pki/tls/certs/ca-bundle.crt",  # Fedora/RHEL 6
+    "/etc/ssl/ca-bundle.pem",  # OpenSUSE
+    "/etc/pki/tls/cacert.pem",  # OpenELEC
+    "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",  # CentOS/RHEL 7
+    # additional locations for RH platforms (CentOS, Fedora, RHEL)
+    "/etc/ssl/certs/ca-bundle.crt",
+    "/etc/ssl/certs/ca-bundle.trust.crt",
+    "/etc/pki/tls/certs/ca-bundle.trust.crt",
+]
+
+
+def resolve_symlink(path):
+    dest = path
+    while True:
+        try:
+            dest = os.path.abspath(os.path.join(dest, os.readlink(dest)))
+        except OSError:
+            break
+    return dest
+
 
 def path_info(path):
     if path and os.path.isfile(path):
@@ -30,6 +56,7 @@ def path_info(path):
             certs = _pem_re.findall(f.read())
         return dict(
             path=path,
+            resolved=resolve_symlink(path),
             exists=True,
             type="file",
             size=os.path.getsize(path),
@@ -40,12 +67,15 @@ def path_info(path):
         certs = [f for f in files if _hashfile_re.match(f)]
         return dict(
             path=path,
+            resolved=resolve_symlink(path),
             exists=True,
             type="dir",
             size=len(files),
             certs=len(certs),
         )
-    return dict(path=path, exists=False, type=None, size=0, certs=0,)
+    return dict(
+        path=path, resolved=None, exists=False, type=None, size=0, certs=0,
+    )
 
 
 def read_os_release(filenames=("/etc/os-release", "/usr/lib/os-release")):
@@ -82,7 +112,7 @@ def read_os_release(filenames=("/etc/os-release", "/usr/lib/os-release")):
     return release
 
 
-def check_candidates(candidates=("/etc/ssl", "/etc/pki/tls")):
+def check_openssldir_candidates(candidates=OPENSSLDIR_CANDIDATES):
     result = {}
     for candidate in candidates:
         if not os.path.isdir(candidate):
@@ -101,6 +131,10 @@ def check_candidates(candidates=("/etc/ssl", "/etc/pki/tls")):
     return result
 
 
+def check_cafile_candidates(candidates=CAFILE_CANDIDATES):
+    return {candidate: path_info(candidate) for candidate in candidates}
+
+
 def get_info():
     vp = ssl.get_default_verify_paths()
     openssl_cnf = os.path.join(
@@ -113,12 +147,14 @@ def get_info():
         os_release=read_os_release(),
         sys_platform=sys.platform,
         os_name=os.name,
+        timestamp=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
         default_verify_paths=vp._asdict(),
         cafile=cafile,
         capath=capath,
         truststore=bool(cafile["certs"] or capath["certs"]),
         openssl_conf=path_info(openssl_cnf),
-        candidates=check_candidates(),
+        openssldir_candidates=check_openssldir_candidates(),
+        cafile_candidates=check_cafile_candidates(),
         openssl=dict(
             version=ssl.OPENSSL_VERSION,
             version_info=ssl.OPENSSL_VERSION_INFO,

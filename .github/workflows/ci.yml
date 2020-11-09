@@ -24,14 +24,14 @@ jobs:
           "alpine",
           "archlinux",
           "centos8",
-          "debian-buster-ca-certificates", "debian-buster", "debian-testing-ca-certificates",
-          "fedora-32", "fedora-33",
+          "debian-buster-ca-certificates", "debian-buster", "debian-testing", "debian-testing-ca-certificates",
+          "fedora-32", "fedora-33", "fedora-34", "fedora-rawhide",
           "gentoo",
           "linuxmint-193",
           "opensuse-tumbleweed",
           "openwrt",
           "rhel8-ubi",
-          "ubuntu-xenial-ca-certificates", "ubuntu-bionic-ca-certificates", "ubuntu-focal-ca-certificates", "ubuntu-focal"
+          "ubuntu-xenial-ca-certificates", "ubuntu-bionic-ca-certificates", "ubuntu-focal-ca-certificates", "ubuntu-focal", "ubuntu-groovy"
         ]
     steps:
       - name: checkout

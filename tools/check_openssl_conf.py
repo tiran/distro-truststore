@@ -7,6 +7,11 @@ import re
 import ssl
 import sys
 
+try:
+    from urllib.request import urlopen
+except ImportError:
+    from urllib2 import urlopen
+
 
 # hash symlink name, e.g. 2e5ac55d.0
 _hashfile_re = re.compile(r"^[a-f\d]{8}\.\d$")
@@ -183,11 +188,33 @@ def check_default_context():
     return result
 
 
+def check_connect(url="https://pypi.org", timeout=10):
+    ctx = ssl.create_default_context()
+    assert ctx.verify_mode == ssl.CERT_REQUIRED
+    try:
+        urlopen(url, timeout=timeout, context=ctx)
+    except Exception as e:
+        return dict(
+            url=url,
+            verified=False,
+            exception=type(e).__name__,
+            error=str(e),
+        )
+    else:
+        return dict(
+            url=url,
+            verified=True,
+            exception=None,
+            error=None,
+        )
+
+
 def get_info():
     return dict(
         name=os.environ.get("DISTRO_TRUSTSTORE_NAME", platform.platform()),
         os_info=os_info(),
         timestamp=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        can_connect=check_connect(),
         default_context=check_default_context(),
         default_verify=check_default_verify(),
         candidates_openssldir=check_openssldir_candidates(),

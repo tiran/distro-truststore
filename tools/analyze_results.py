@@ -27,12 +27,13 @@ for filename in sorted(glob.glob("result*.json")):
         dvp = None
 
     ca_certs_count = j["default_context"]["ca_certs_count"]
+    can_connect = j["can_connect"]["verified"]
 
     result[name] = dict(
         name=j["name"],
         openssldirs=openssldirs,
         default_verify_paths=dvp,
-        default_context_can_verify=bool(ca_certs_count),
+        default_context_can_verify=can_connect,
         default_context_ca_certs_count=ca_certs_count,
         openssl_version=j["openssl"]["version"]
     )

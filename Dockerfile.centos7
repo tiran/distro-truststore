@@ -1,0 +1,11 @@
+FROM centos:7
+RUN yum update -y && \
+    yum install -y python2 && \
+    yum clean all
+
+ENV DISTRO_TRUSTSTORE_NAME="CentOS 7"
+ENV PYTHON="python2"
+
+COPY check_openssl_conf.py entrypoint.sh /
+RUN /entrypoint.sh
+ENTRYPOINT /entrypoint.sh

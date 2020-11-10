@@ -4,6 +4,9 @@ RUN apt update && \
     apt install -y python3 ca-certificates && \
     apt clean
 
-COPY check_openssl_conf.py /
-RUN /check_openssl_conf.py
-ENTRYPOINT /check_openssl_conf.py
+ENV DISTRO_TRUSTSTORE_NAME="Debian Buster with ca-certificates"
+ENV PYTHON="python3"
+
+COPY check_openssl_conf.py entrypoint.sh /
+RUN /entrypoint.sh
+ENTRYPOINT /entrypoint.sh

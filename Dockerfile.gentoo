@@ -1,5 +1,8 @@
 FROM gentoo/stage3:latest
 
-COPY check_openssl_conf.py /
-RUN /check_openssl_conf.py
-ENTRYPOINT /check_openssl_conf.py
+ENV DISTRO_TRUSTSTORE_NAME="Gentoo Stage 3 latest"
+ENV PYTHON="python3"
+
+COPY check_openssl_conf.py entrypoint.sh /
+RUN /entrypoint.sh
+ENTRYPOINT /entrypoint.sh

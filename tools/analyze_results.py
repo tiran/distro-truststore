@@ -6,11 +6,10 @@ import sys
 result = {}
 
 for filename in sorted(glob.glob("result*.json")):
-    name = filename[len("result-"):].rsplit(".", 1)[0]
-
     with open(filename) as f:
         j = json.load(f)
 
+    name = j["name"]
     openssldirs = [
         key
         for key, value in j["candidates_openssldir"].items()

@@ -185,6 +185,7 @@ def check_default_context():
 
 def get_info():
     return dict(
+        name=os.environ.get("DISTRO_TRUSTSTORE_NAME", platform.platform()),
         os_info=os_info(),
         timestamp=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
         default_context=check_default_context(),

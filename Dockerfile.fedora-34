@@ -3,6 +3,9 @@ RUN dnf update -y && \
     dnf install -y python3 && \
     dnf clean all
 
-COPY check_openssl_conf.py /
-RUN /check_openssl_conf.py
-ENTRYPOINT /check_openssl_conf.py
+ENV DISTRO_TRUSTSTORE_NAME="Fedora 34"
+ENV PYTHON="python3"
+
+COPY check_openssl_conf.py entrypoint.sh /
+RUN /entrypoint.sh
+ENTRYPOINT /entrypoint.sh

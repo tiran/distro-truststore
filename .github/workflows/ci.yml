@@ -23,7 +23,7 @@ jobs:
         distro: [
           "alpine",
           "archlinux",
-          "centos8",
+          "centos7", "centos8",
           "debian-buster-ca-certificates", "debian-buster", "debian-testing", "debian-testing-ca-certificates",
           "fedora-32", "fedora-33", "fedora-34", "fedora-rawhide",
           "gentoo",
@@ -48,6 +48,7 @@ jobs:
         with:
           name: result
           path: result-${{ matrix.distro }}.json
+          if-no-files-found: error
 
   freebsd:
     runs-on: macos-latest
@@ -64,13 +65,15 @@ jobs:
           prepare: pkg install -y python3 ca_root_nss
           run: |
             set -ex
-            ./tools/check_openssl_conf.py > result-freebsd-ca_root_nss.json
+            export DISTRO_TRUSTSTORE_NAME=freebsd
+            python3 ./tools/check_openssl_conf.py > result-freebsd-ca_root_nss.json
       - name: Show results
         run: cat result-freebsd-ca_root_nss.json
       - uses: actions/upload-artifact@v2
         with:
           name: result
           path: result-freebsd-ca_root_nss.json
+          if-no-files-found: error
 
   mac_win:
     name: "OS ${{ matrix.os }} with Python ${{ matrix.python-version }}"
@@ -88,11 +91,14 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Run script
-        run: python tools/check_openssl_conf.py > tee result-os-${{ matrix.os }}-${{ matrix.python-version }}.json
+        env:
+          DISTRO_TRUSTSTORE_NAME: ${{ matrix.os }}
+        run: python tools/check_openssl_conf.py | tee result-os-${{ matrix.os }}-${{ matrix.python-version }}.json
       - uses: actions/upload-artifact@v2
         with:
           name: result
           path: result-os-${{ matrix.os }}-${{ matrix.python-version }}.json
+          if-no-files-found: error
 
   analyze:
     name: "Analyze results"
@@ -114,5 +120,6 @@ jobs:
           tools/analyze_results.py | tee analyzed.json
       - uses: actions/upload-artifact@v2
         with:
-          name: analyzed
+          name: result
           path: analyzed.json
+          if-no-files-found: error

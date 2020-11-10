@@ -2,6 +2,9 @@ FROM opensuse/tumbleweed:latest
 RUN zypper update -y && \
     zypper install -y python3
 
-COPY check_openssl_conf.py /
-RUN /check_openssl_conf.py
-ENTRYPOINT /check_openssl_conf.py
+ENV DISTRO_TRUSTSTORE_NAME="openSUSE Tumbleweed"
+ENV PYTHON="python3"
+
+COPY check_openssl_conf.py entrypoint.sh /
+RUN /entrypoint.sh
+ENTRYPOINT /entrypoint.sh

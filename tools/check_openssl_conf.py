@@ -224,6 +224,7 @@ def get_info():
             version_info=ssl.OPENSSL_VERSION_INFO,
         ),
         python=dict(
+            executable=sys.executable,
             version=sys.version,
             version_info=list(sys.version_info),
         ),

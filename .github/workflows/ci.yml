@@ -62,17 +62,22 @@ jobs:
         uses: vmactions/freebsd-vm@v0.0.8
         with:
           usesh: true
-          prepare: pkg install -y python3 ca_root_nss
           run: |
             set -ex
-            export DISTRO_TRUSTSTORE_NAME=freebsd
+
+            export DISTRO_TRUSTSTORE_NAME="FreeBSD pkg python3"
+            pkg install -y python3
+            python3 ./tools/check_openssl_conf.py > result-freebsd.json
+
+            export DISTRO_TRUSTSTORE_NAME="FreeBSD pkg python3 ca_root_nss"
+            pkg install -y ca_root_nss
             python3 ./tools/check_openssl_conf.py > result-freebsd-ca_root_nss.json
       - name: Show results
-        run: cat result-freebsd-ca_root_nss.json
+        run: cat result-*.json
       - uses: actions/upload-artifact@v2
         with:
           name: result
-          path: result-freebsd-ca_root_nss.json
+          path: result-*.json
           if-no-files-found: error
 
   mac_win:

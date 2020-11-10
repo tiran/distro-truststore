@@ -69,7 +69,7 @@
   },
   "debian-buster-ca-certificates": {
     "default_context_ca_certs_count": 0,
-    "default_context_can_verify": false,
+    "default_context_can_verify": true,
     "default_verify_paths": {
       "cafile": null,
       "cafile_valid": false,
@@ -92,7 +92,7 @@
   },
   "debian-testing-ca-certificates": {
     "default_context_ca_certs_count": 0,
-    "default_context_can_verify": false,
+    "default_context_can_verify": true,
     "default_verify_paths": {
       "cafile": null,
       "cafile_valid": false,
@@ -182,7 +182,7 @@
   },
   "gentoo": {
     "default_context_ca_certs_count": 0,
-    "default_context_can_verify": false,
+    "default_context_can_verify": true,
     "default_verify_paths": {
       "cafile": null,
       "cafile_valid": false,
@@ -197,7 +197,7 @@
   },
   "linuxmint-193": {
     "default_context_ca_certs_count": 0,
-    "default_context_can_verify": false,
+    "default_context_can_verify": true,
     "default_verify_paths": {
       "cafile": null,
       "cafile_valid": false,
@@ -280,7 +280,7 @@
   },
   "ubuntu-bionic-ca-certificates": {
     "default_context_ca_certs_count": 0,
-    "default_context_can_verify": false,
+    "default_context_can_verify": true,
     "default_verify_paths": {
       "cafile": null,
       "cafile_valid": false,
@@ -303,7 +303,7 @@
   },
   "ubuntu-focal-ca-certificates": {
     "default_context_ca_certs_count": 0,
-    "default_context_can_verify": false,
+    "default_context_can_verify": true,
     "default_verify_paths": {
       "cafile": null,
       "cafile_valid": false,
@@ -326,7 +326,7 @@
   },
   "ubuntu-xenial-ca-certificates": {
     "default_context_ca_certs_count": 0,
-    "default_context_can_verify": false,
+    "default_context_can_verify": true,
     "default_verify_paths": {
       "cafile": null,
       "cafile_valid": false,

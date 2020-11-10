@@ -1,4 +1,10 @@
 {
+  "can_connect": {
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1123)>",
+    "exception": "URLError",
+    "url": "https://pypi.org",
+    "verified": false
+  },
   "candidates_cafile": {
     "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem": {
       "certs": 0,
@@ -197,5 +203,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-10T11:42:34Z"
+  "timestamp": "2020-11-10T12:21:31Z"
 }

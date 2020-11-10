@@ -1,4 +1,10 @@
 {
+  "can_connect": {
+    "error": null,
+    "exception": null,
+    "url": "https://pypi.org",
+    "verified": true
+  },
   "candidates_cafile": {
     "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem": {
       "certs": 0,
@@ -229,5 +235,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-10T11:42:35Z"
+  "timestamp": "2020-11-10T12:20:45Z"
 }

@@ -234,6 +234,7 @@
     },
     "truststore": true
   },
+  "name": "Fedora 33",
   "openssl": {
     "version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
     "version_info": [
@@ -283,5 +284,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-09T15:47:42Z"
+  "timestamp": "2020-11-10T11:43:03Z"
 }

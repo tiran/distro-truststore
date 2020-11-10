@@ -226,6 +226,7 @@
     },
     "truststore": true
   },
+  "name": "RHEL 8.3 UBI",
   "openssl": {
     "version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
     "version_info": [
@@ -270,5 +271,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-09T15:44:57Z"
+  "timestamp": "2020-11-10T11:42:10Z"
 }

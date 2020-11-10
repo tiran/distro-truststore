@@ -221,6 +221,7 @@
     },
     "truststore": true
   },
+  "name": "Linux Mint 19.3",
   "openssl": {
     "version": "OpenSSL 1.1.1  11 Sep 2018",
     "version_info": [
@@ -262,5 +263,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-09T15:46:06Z"
+  "timestamp": "2020-11-10T11:43:13Z"
 }

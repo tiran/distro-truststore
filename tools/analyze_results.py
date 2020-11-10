@@ -6,10 +6,11 @@ import sys
 result = {}
 
 for filename in sorted(glob.glob("result*.json")):
+    name = filename[len("result-"):].rsplit(".", 1)[0]
+
     with open(filename) as f:
         j = json.load(f)
 
-    name = j["name"]
     openssldirs = [
         key
         for key, value in j["candidates_openssldir"].items()
@@ -28,6 +29,7 @@ for filename in sorted(glob.glob("result*.json")):
     ca_certs_count = j["default_context"]["ca_certs_count"]
 
     result[name] = dict(
+        name=j["name"],
         openssldirs=openssldirs,
         default_verify_paths=dvp,
         default_context_can_verify=bool(ca_certs_count),

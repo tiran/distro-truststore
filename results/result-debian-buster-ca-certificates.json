@@ -179,6 +179,7 @@
     },
     "truststore": true
   },
+  "name": "Debian Buster with ca-certificates",
   "openssl": {
     "version": "OpenSSL 1.1.1d  10 Sep 2019",
     "version_info": [
@@ -216,5 +217,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-09T15:45:10Z"
+  "timestamp": "2020-11-10T11:42:14Z"
 }

@@ -155,6 +155,7 @@
     },
     "truststore": false
   },
+  "name": "windows-latest",
   "openssl": {
     "version": "OpenSSL 1.1.1g  21 Apr 2020",
     "version_info": [
@@ -180,5 +181,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-09T15:45:28Z"
+  "timestamp": "2020-11-10T11:42:40Z"
 }

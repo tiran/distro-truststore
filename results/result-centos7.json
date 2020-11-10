@@ -1,0 +1,218 @@
+{
+  "candidates_cafile": {
+    "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem": {
+      "certs": 136, 
+      "exists": true, 
+      "path": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem", 
+      "resolved": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem", 
+      "size": 216090, 
+      "type": "file"
+    }, 
+    "/etc/pki/tls/cacert.pem": {
+      "certs": 0, 
+      "exists": false, 
+      "path": "/etc/pki/tls/cacert.pem", 
+      "resolved": null, 
+      "size": 0, 
+      "type": null
+    }, 
+    "/etc/pki/tls/certs/ca-bundle.crt": {
+      "certs": 136, 
+      "exists": true, 
+      "path": "/etc/pki/tls/certs/ca-bundle.crt", 
+      "resolved": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem", 
+      "size": 216090, 
+      "type": "file"
+    }, 
+    "/etc/pki/tls/certs/ca-bundle.trust.crt": {
+      "certs": 149, 
+      "exists": true, 
+      "path": "/etc/pki/tls/certs/ca-bundle.trust.crt", 
+      "resolved": "/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt", 
+      "size": 249827, 
+      "type": "file"
+    }, 
+    "/etc/ssl/ca-bundle.pem": {
+      "certs": 0, 
+      "exists": false, 
+      "path": "/etc/ssl/ca-bundle.pem", 
+      "resolved": null, 
+      "size": 0, 
+      "type": null
+    }, 
+    "/etc/ssl/cert.pem": {
+      "certs": 0, 
+      "exists": false, 
+      "path": "/etc/ssl/cert.pem", 
+      "resolved": null, 
+      "size": 0, 
+      "type": null
+    }, 
+    "/etc/ssl/certs/ca-bundle.crt": {
+      "certs": 136, 
+      "exists": true, 
+      "path": "/etc/ssl/certs/ca-bundle.crt", 
+      "resolved": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem", 
+      "size": 216090, 
+      "type": "file"
+    }, 
+    "/etc/ssl/certs/ca-bundle.trust.crt": {
+      "certs": 149, 
+      "exists": true, 
+      "path": "/etc/ssl/certs/ca-bundle.trust.crt", 
+      "resolved": "/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt", 
+      "size": 249827, 
+      "type": "file"
+    }, 
+    "/etc/ssl/certs/ca-certificates.crt": {
+      "certs": 0, 
+      "exists": false, 
+      "path": "/etc/ssl/certs/ca-certificates.crt", 
+      "resolved": null, 
+      "size": 0, 
+      "type": null
+    }
+  }, 
+  "candidates_openssldir": {
+    "/etc/pki/tls": {
+      "cafile": {
+        "certs": 136, 
+        "exists": true, 
+        "path": "/etc/pki/tls/cert.pem", 
+        "resolved": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem", 
+        "size": 216090, 
+        "type": "file"
+      }, 
+      "capath": {
+        "certs": 0, 
+        "exists": true, 
+        "path": "/etc/pki/tls/certs", 
+        "resolved": "/etc/pki/tls/certs", 
+        "size": 2, 
+        "type": "dir"
+      }, 
+      "openssl_conf": {
+        "certs": 0, 
+        "exists": true, 
+        "path": "/etc/pki/tls/openssl.cnf", 
+        "resolved": "/etc/pki/tls/openssl.cnf", 
+        "size": 10923, 
+        "type": "file"
+      }, 
+      "valid": true
+    }, 
+    "/etc/ssl": {
+      "cafile": {
+        "certs": 0, 
+        "exists": false, 
+        "path": "/etc/ssl/cert.pem", 
+        "resolved": null, 
+        "size": 0, 
+        "type": null
+      }, 
+      "capath": {
+        "certs": 0, 
+        "exists": true, 
+        "path": "/etc/ssl/certs", 
+        "resolved": "/etc/ssl/pki/tls/certs", 
+        "size": 2, 
+        "type": "dir"
+      }, 
+      "openssl_conf": {
+        "certs": 0, 
+        "exists": false, 
+        "path": "/etc/ssl/openssl.cnf", 
+        "resolved": null, 
+        "size": 0, 
+        "type": null
+      }, 
+      "valid": false
+    }
+  }, 
+  "default_context": {
+    "ca_certs_count": 136, 
+    "options_repr": "2197947391L", 
+    "verify_flags_repr": "0L"
+  }, 
+  "default_verify": {
+    "cafile": {
+      "certs": 136, 
+      "exists": true, 
+      "path": "/etc/pki/tls/cert.pem", 
+      "resolved": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem", 
+      "size": 216090, 
+      "type": "file"
+    }, 
+    "capath": {
+      "certs": 0, 
+      "exists": true, 
+      "path": "/etc/pki/tls/certs", 
+      "resolved": "/etc/pki/tls/certs", 
+      "size": 2, 
+      "type": "dir"
+    }, 
+    "default_verify_paths": {
+      "cafile": "/etc/pki/tls/cert.pem", 
+      "capath": "/etc/pki/tls/certs", 
+      "openssl_cafile": "/etc/pki/tls/cert.pem", 
+      "openssl_cafile_env": "SSL_CERT_FILE", 
+      "openssl_capath": "/etc/pki/tls/certs", 
+      "openssl_capath_env": "SSL_CERT_DIR"
+    }, 
+    "openssl_conf": {
+      "certs": 0, 
+      "exists": true, 
+      "path": "/etc/pki/tls/openssl.cnf", 
+      "resolved": "/etc/pki/tls/openssl.cnf", 
+      "size": 10923, 
+      "type": "file"
+    }, 
+    "truststore": true
+  }, 
+  "name": "CentOS 7", 
+  "openssl": {
+    "version": "OpenSSL 1.0.2k-fips  26 Jan 2017", 
+    "version_info": [
+      1, 
+      0, 
+      2, 
+      11, 
+      15
+    ]
+  }, 
+  "os_info": {
+    "os-release": {
+      "ANSI_COLOR": "0;31", 
+      "BUG_REPORT_URL": "https://bugs.centos.org/", 
+      "CENTOS_MANTISBT_PROJECT": "CentOS-7", 
+      "CENTOS_MANTISBT_PROJECT_VERSION": "7", 
+      "CPE_NAME": "cpe:/o:centos:centos:7", 
+      "HOME_URL": "https://www.centos.org/", 
+      "ID": "centos", 
+      "ID_LIKE": [
+        "rhel", 
+        "fedora"
+      ], 
+      "NAME": "CentOS Linux", 
+      "PRETTY_NAME": "CentOS Linux 7 (Core)", 
+      "REDHAT_SUPPORT_PRODUCT": "centos", 
+      "REDHAT_SUPPORT_PRODUCT_VERSION": "7", 
+      "VERSION": "7 (Core)", 
+      "VERSION_ID": "7"
+    }, 
+    "os_name": "posix", 
+    "platform": "Linux-5.4.0-1031-azure-x86_64-with-centos-7.8.2003-Core", 
+    "sys_platform": "linux2"
+  }, 
+  "python": {
+    "version": "2.7.5 (default, Apr  2 2020, 13:16:51) \n[GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]", 
+    "version_info": [
+      2, 
+      7, 
+      5, 
+      "final", 
+      0
+    ]
+  }, 
+  "timestamp": "2020-11-10T11:42:08Z"
+}

@@ -203,6 +203,7 @@
     },
     "truststore": true
   },
+  "name": "macos-latest",
   "openssl": {
     "version": "OpenSSL 1.0.2t  10 Sep 2019",
     "version_info": [
@@ -228,5 +229,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-09T15:45:22Z"
+  "timestamp": "2020-11-10T11:42:35Z"
 }

@@ -179,6 +179,7 @@
     },
     "truststore": true
   },
+  "name": "Ubuntu Focal with ca-certificates",
   "openssl": {
     "version": "OpenSSL 1.1.1f  31 Mar 2020",
     "version_info": [
@@ -220,5 +221,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-09T15:45:07Z"
+  "timestamp": "2020-11-10T11:42:15Z"
 }

@@ -145,6 +145,7 @@
     },
     "truststore": true
   },
+  "name": "Ubuntu Xenial with ca-certificates",
   "openssl": {
     "version": "OpenSSL 1.0.2g  1 Mar 2016",
     "version_info": [
@@ -185,5 +186,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-09T15:45:32Z"
+  "timestamp": "2020-11-10T11:42:57Z"
 }

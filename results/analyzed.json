@@ -8,6 +8,7 @@
       "capath": "/etc/ssl/certs",
       "capath_valid": false
     },
+    "name": "alpine:latest",
     "openssl_version": "OpenSSL 1.1.1g  21 Apr 2020",
     "openssldirs": [
       "/etc/ssl"
@@ -22,9 +23,25 @@
       "capath": "/etc/ssl/certs",
       "capath_valid": true
     },
+    "name": "archlinux:latest",
     "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
     "openssldirs": [
       "/etc/ssl"
+    ]
+  },
+  "centos7": {
+    "default_context_ca_certs_count": 136,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": "/etc/pki/tls/cert.pem",
+      "cafile_valid": true,
+      "capath": "/etc/pki/tls/certs",
+      "capath_valid": false
+    },
+    "name": "CentOS 7",
+    "openssl_version": "OpenSSL 1.0.2k-fips  26 Jan 2017",
+    "openssldirs": [
+      "/etc/pki/tls"
     ]
   },
   "centos8": {
@@ -36,6 +53,7 @@
       "capath": "/etc/pki/tls/certs",
       "capath_valid": false
     },
+    "name": "CentOS 8",
     "openssl_version": "OpenSSL 1.1.1c FIPS  28 May 2019",
     "openssldirs": [
       "/etc/pki/tls"
@@ -45,6 +63,7 @@
     "default_context_ca_certs_count": 0,
     "default_context_can_verify": false,
     "default_verify_paths": null,
+    "name": "Debian Buster",
     "openssl_version": "OpenSSL 1.1.1d  10 Sep 2019",
     "openssldirs": []
   },
@@ -57,6 +76,7 @@
       "capath": "/usr/lib/ssl/certs",
       "capath_valid": true
     },
+    "name": "Debian Buster with ca-certificates",
     "openssl_version": "OpenSSL 1.1.1d  10 Sep 2019",
     "openssldirs": [
       "/etc/ssl"
@@ -66,6 +86,7 @@
     "default_context_ca_certs_count": 0,
     "default_context_can_verify": false,
     "default_verify_paths": null,
+    "name": "Debian testing",
     "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
     "openssldirs": []
   },
@@ -78,6 +99,7 @@
       "capath": "/usr/lib/ssl/certs",
       "capath_valid": true
     },
+    "name": "Debian testing with ca-certificates",
     "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
     "openssldirs": [
       "/etc/ssl"
@@ -92,6 +114,7 @@
       "capath": "/etc/pki/tls/certs",
       "capath_valid": false
     },
+    "name": "Fedora 32",
     "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
     "openssldirs": [
       "/etc/pki/tls"
@@ -106,6 +129,7 @@
       "capath": "/etc/pki/tls/certs",
       "capath_valid": false
     },
+    "name": "Fedora 33",
     "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
     "openssldirs": [
       "/etc/pki/tls"
@@ -120,6 +144,7 @@
       "capath": "/etc/pki/tls/certs",
       "capath_valid": false
     },
+    "name": "Fedora 34",
     "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
     "openssldirs": [
       "/etc/pki/tls"
@@ -134,6 +159,7 @@
       "capath": "/etc/pki/tls/certs",
       "capath_valid": false
     },
+    "name": "Fedora Rawhode",
     "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
     "openssldirs": [
       "/etc/pki/tls"
@@ -148,6 +174,7 @@
       "capath": null,
       "capath_valid": false
     },
+    "name": "freebsd",
     "openssl_version": "OpenSSL 1.1.1d-freebsd  10 Sep 2019",
     "openssldirs": [
       "/etc/ssl"
@@ -162,6 +189,7 @@
       "capath": "/etc/ssl/certs",
       "capath_valid": true
     },
+    "name": "Gentoo Stage 3 latest",
     "openssl_version": "OpenSSL 1.1.1g  21 Apr 2020",
     "openssldirs": [
       "/etc/ssl"
@@ -176,6 +204,7 @@
       "capath": "/usr/lib/ssl/certs",
       "capath_valid": true
     },
+    "name": "Linux Mint 19.3",
     "openssl_version": "OpenSSL 1.1.1  11 Sep 2018",
     "openssldirs": [
       "/etc/ssl"
@@ -190,6 +219,7 @@
       "capath": "/var/lib/ca-certificates/openssl",
       "capath_valid": true
     },
+    "name": "openSUSE Tumbleweed",
     "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
     "openssldirs": [
       "/etc/ssl"
@@ -204,6 +234,7 @@
       "capath": "/etc/ssl/certs",
       "capath_valid": false
     },
+    "name": "OpenWRT RootFS",
     "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
     "openssldirs": [
       "/etc/ssl"
@@ -218,6 +249,7 @@
       "capath": "/usr/local/etc/openssl/certs",
       "capath_valid": false
     },
+    "name": "macos-latest",
     "openssl_version": "OpenSSL 1.0.2t  10 Sep 2019",
     "openssldirs": [
       "/etc/ssl"
@@ -227,6 +259,7 @@
     "default_context_ca_certs_count": 354,
     "default_context_can_verify": true,
     "default_verify_paths": null,
+    "name": "windows-latest",
     "openssl_version": "OpenSSL 1.1.1g  21 Apr 2020",
     "openssldirs": []
   },
@@ -239,6 +272,7 @@
       "capath": "/etc/pki/tls/certs",
       "capath_valid": false
     },
+    "name": "RHEL 8.3 UBI",
     "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
     "openssldirs": [
       "/etc/pki/tls"
@@ -253,6 +287,7 @@
       "capath": "/usr/lib/ssl/certs",
       "capath_valid": true
     },
+    "name": "Ubuntu Bionic with ca-certificates",
     "openssl_version": "OpenSSL 1.1.1  11 Sep 2018",
     "openssldirs": [
       "/etc/ssl"
@@ -262,6 +297,7 @@
     "default_context_ca_certs_count": 0,
     "default_context_can_verify": false,
     "default_verify_paths": null,
+    "name": "Ubuntu Focal",
     "openssl_version": "OpenSSL 1.1.1f  31 Mar 2020",
     "openssldirs": []
   },
@@ -274,6 +310,7 @@
       "capath": "/usr/lib/ssl/certs",
       "capath_valid": true
     },
+    "name": "Ubuntu Focal with ca-certificates",
     "openssl_version": "OpenSSL 1.1.1f  31 Mar 2020",
     "openssldirs": [
       "/etc/ssl"
@@ -283,6 +320,7 @@
     "default_context_ca_certs_count": 0,
     "default_context_can_verify": false,
     "default_verify_paths": null,
+    "name": "Ubuntu Groovy",
     "openssl_version": "OpenSSL 1.1.1f  31 Mar 2020",
     "openssldirs": []
   },
@@ -295,6 +333,7 @@
       "capath": "/usr/lib/ssl/certs",
       "capath_valid": true
     },
+    "name": "Ubuntu Xenial with ca-certificates",
     "openssl_version": "OpenSSL 1.0.2g  1 Mar 2016",
     "openssldirs": [
       "/etc/ssl"

@@ -179,6 +179,7 @@
     },
     "truststore": true
   },
+  "name": "Gentoo Stage 3 latest",
   "openssl": {
     "version": "OpenSSL 1.1.1g  21 Apr 2020",
     "version_info": [
@@ -201,7 +202,7 @@
       "SUPPORT_URL": "https://www.gentoo.org/support/"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1031-azure-x86_64-Intel-R-_Xeon-R-_CPU_E5-2673_v4_@_2.30GHz-with-gentoo-2.7",
+    "platform": "Linux-5.4.0-1031-azure-x86_64-Intel-R-_Xeon-R-_Platinum_8171M_CPU_@_2.60GHz-with-gentoo-2.7",
     "sys_platform": "linux"
   },
   "python": {
@@ -214,5 +215,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-09T15:45:13Z"
+  "timestamp": "2020-11-10T11:42:32Z"
 }

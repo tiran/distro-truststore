@@ -226,6 +226,7 @@
     },
     "truststore": true
   },
+  "name": "CentOS 8",
   "openssl": {
     "version": "OpenSSL 1.1.1c FIPS  28 May 2019",
     "version_info": [
@@ -271,5 +272,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-09T15:44:59Z"
+  "timestamp": "2020-11-10T11:42:13Z"
 }

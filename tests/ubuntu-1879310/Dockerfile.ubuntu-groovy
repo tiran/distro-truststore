@@ -1,0 +1,7 @@
+FROM ubuntu:groovy
+RUN apt update && \
+    apt upgrade -y && \
+    apt install -y python3 && \
+    apt clean
+
+RUN python3 -c 'from urllib.request import urlopen; urlopen("https://www.pypi.org")'

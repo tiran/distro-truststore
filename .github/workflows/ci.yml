@@ -31,7 +31,8 @@ jobs:
           "opensuse-tumbleweed",
           "openwrt",
           "rhel8-ubi",
-          "ubuntu-xenial-ca-certificates", "ubuntu-bionic-ca-certificates", "ubuntu-focal-ca-certificates", "ubuntu-focal", "ubuntu-groovy"
+          "ubuntu-xenial-ca-certificates", "ubuntu-bionic-ca-certificates", "ubuntu-focal-ca-certificates", "ubuntu-focal", "ubuntu-groovy",
+          "ubuntu-focal-deadsnakes"
         ]
     steps:
       - name: checkout

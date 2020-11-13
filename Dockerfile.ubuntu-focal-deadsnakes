@@ -1,0 +1,14 @@
+FROM ubuntu:focal
+COPY ppa_deadsnakes.list /etc/apt/sources.list.d/
+COPY ppa_deadsnakes.gpg  /etc/apt/trusted.gpg.d/
+RUN apt update && \
+    apt upgrade -y && \
+    apt install -y python3.9 && \
+    apt clean
+
+ENV DISTRO_TRUSTSTORE_NAME="Ubuntu Focal with deadsnakes python3.9"
+ENV PYTHON="python3.9"
+
+COPY check_openssl_conf.py entrypoint.sh /
+RUN /entrypoint.sh
+ENTRYPOINT /entrypoint.sh

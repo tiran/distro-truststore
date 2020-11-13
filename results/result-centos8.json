@@ -269,6 +269,7 @@
     "sys_platform": "linux"
   },
   "python": {
+    "executable": "/usr/bin/python3",
     "version": "3.6.8 (default, Apr 16 2020, 01:36:27) \n[GCC 8.3.1 20191121 (Red Hat 8.3.1-5)]",
     "version_info": [
       3,
@@ -278,5 +279,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-10T12:21:09Z"
+  "timestamp": "2020-11-13T11:47:53Z"
 }

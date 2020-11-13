@@ -185,7 +185,7 @@
     },
     "truststore": true
   },
-  "name": "freebsd",
+  "name": "FreeBSD pkg python3 ca_root_nss",
   "openssl": {
     "version": "OpenSSL 1.1.1d-freebsd  10 Sep 2019",
     "version_info": [
@@ -202,6 +202,7 @@
     "sys_platform": "freebsd12"
   },
   "python": {
+    "executable": "/usr/local/bin/python3",
     "version": "3.7.9 (default, Oct  3 2020, 01:29:35) \n[Clang 8.0.1 (tags/RELEASE_801/final 366581)]",
     "version_info": [
       3,
@@ -211,5 +212,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-10T12:25:07Z"
+  "timestamp": "2020-11-13T11:51:21Z"
 }

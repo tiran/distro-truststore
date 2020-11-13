@@ -102,7 +102,7 @@
         "exists": true,
         "path": "/etc/pki/tls/openssl.cnf",
         "resolved": "/etc/pki/tls/openssl.cnf",
-        "size": 11227,
+        "size": 11229,
         "type": "file"
       },
       "valid": true
@@ -235,19 +235,19 @@
       "exists": true,
       "path": "/etc/pki/tls/openssl.cnf",
       "resolved": "/etc/pki/tls/openssl.cnf",
-      "size": 11227,
+      "size": 11229,
       "type": "file"
     },
     "truststore": true
   },
   "name": "Fedora Rawhode",
   "openssl": {
-    "version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
+    "version": "OpenSSL 1.1.1h FIPS 22 Sep 2020",
     "version_info": [
       1,
       1,
       1,
-      7,
+      8,
       15
     ]
   },
@@ -281,6 +281,7 @@
     "sys_platform": "linux"
   },
   "python": {
+    "executable": "/usr/bin/python3",
     "version": "3.9.0 (default, Oct  6 2020, 00:00:00) \n[GCC 10.2.1 20201005 (Red Hat 10.2.1-5)]",
     "version_info": [
       3,
@@ -290,5 +291,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-10T12:21:46Z"
+  "timestamp": "2020-11-13T11:48:39Z"
 }

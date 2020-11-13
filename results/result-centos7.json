@@ -207,11 +207,12 @@
       "VERSION_ID": "7"
     }, 
     "os_name": "posix", 
-    "platform": "Linux-5.4.0-1031-azure-x86_64-with-centos-7.8.2003-Core", 
+    "platform": "Linux-5.4.0-1031-azure-x86_64-with-centos-7.9.2009-Core", 
     "sys_platform": "linux2"
   }, 
   "python": {
-    "version": "2.7.5 (default, Apr  2 2020, 13:16:51) \n[GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]", 
+    "executable": "/usr/bin/python2", 
+    "version": "2.7.5 (default, Oct 14 2020, 14:45:30) \n[GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]", 
     "version_info": [
       2, 
       7, 
@@ -220,5 +221,5 @@
       0
     ]
   }, 
-  "timestamp": "2020-11-10T12:21:00Z"
+  "timestamp": "2020-11-13T11:48:54Z"
 }

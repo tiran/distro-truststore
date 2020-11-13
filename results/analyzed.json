@@ -130,7 +130,7 @@
       "capath_valid": false
     },
     "name": "Fedora 33",
-    "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
+    "openssl_version": "OpenSSL 1.1.1h FIPS 22 Sep 2020",
     "openssldirs": [
       "/etc/pki/tls"
     ]
@@ -145,7 +145,7 @@
       "capath_valid": false
     },
     "name": "Fedora 34",
-    "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
+    "openssl_version": "OpenSSL 1.1.1h FIPS 22 Sep 2020",
     "openssldirs": [
       "/etc/pki/tls"
     ]
@@ -160,10 +160,18 @@
       "capath_valid": false
     },
     "name": "Fedora Rawhode",
-    "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
+    "openssl_version": "OpenSSL 1.1.1h FIPS 22 Sep 2020",
     "openssldirs": [
       "/etc/pki/tls"
     ]
+  },
+  "freebsd": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": null,
+    "name": "FreeBSD pkg python3",
+    "openssl_version": "OpenSSL 1.1.1d-freebsd  10 Sep 2019",
+    "openssldirs": []
   },
   "freebsd-ca_root_nss": {
     "default_context_ca_certs_count": 148,
@@ -174,7 +182,7 @@
       "capath": null,
       "capath_valid": false
     },
-    "name": "freebsd",
+    "name": "FreeBSD pkg python3 ca_root_nss",
     "openssl_version": "OpenSSL 1.1.1d-freebsd  10 Sep 2019",
     "openssldirs": [
       "/etc/ssl"
@@ -244,13 +252,13 @@
     "default_context_ca_certs_count": 164,
     "default_context_can_verify": true,
     "default_verify_paths": {
-      "cafile": "/usr/local/etc/openssl/cert.pem",
+      "cafile": "/usr/local/etc/openssl@1.1/cert.pem",
       "cafile_valid": true,
-      "capath": "/usr/local/etc/openssl/certs",
+      "capath": "/usr/local/etc/openssl@1.1/certs",
       "capath_valid": false
     },
     "name": "macos-latest",
-    "openssl_version": "OpenSSL 1.0.2t  10 Sep 2019",
+    "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
     "openssldirs": [
       "/etc/ssl"
     ]
@@ -315,6 +323,14 @@
     "openssldirs": [
       "/etc/ssl"
     ]
+  },
+  "ubuntu-focal-deadsnakes": {
+    "default_context_ca_certs_count": 0,
+    "default_context_can_verify": false,
+    "default_verify_paths": null,
+    "name": "Ubuntu Focal with deadsnakes python3.9",
+    "openssl_version": "OpenSSL 1.1.1f  31 Mar 2020",
+    "openssldirs": []
   },
   "ubuntu-groovy": {
     "default_context_ca_certs_count": 0,

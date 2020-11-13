@@ -218,6 +218,7 @@
     "sys_platform": "linux"
   },
   "python": {
+    "executable": "/usr/bin/python3",
     "version": "3.8.5 (default, Jul 28 2020, 12:59:40) \n[GCC 9.3.0]",
     "version_info": [
       3,
@@ -227,5 +228,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-10T12:21:38Z"
+  "timestamp": "2020-11-13T11:48:23Z"
 }

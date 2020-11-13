@@ -1,9 +1,9 @@
 {
   "can_connect": {
-    "error": null,
-    "exception": null,
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1091)>",
+    "exception": "URLError",
     "url": "https://pypi.org",
-    "verified": true
+    "verified": false
   },
   "candidates_cafile": {
     "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem": {
@@ -71,12 +71,12 @@
       "type": null
     },
     "/etc/ssl/certs/ca-certificates.crt": {
-      "certs": 126,
-      "exists": true,
+      "certs": 0,
+      "exists": false,
       "path": "/etc/ssl/certs/ca-certificates.crt",
-      "resolved": "/etc/ssl/certs/ca-certificates.crt",
-      "size": 198416,
-      "type": "file"
+      "resolved": null,
+      "size": 0,
+      "type": null
     }
   },
   "candidates_openssldir": {
@@ -93,22 +93,22 @@
         "type": null
       },
       "capath": {
-        "certs": 126,
-        "exists": true,
+        "certs": 0,
+        "exists": false,
         "path": "/etc/ssl/certs",
-        "resolved": "/etc/ssl/certs",
-        "size": 253,
-        "type": "dir"
+        "resolved": null,
+        "size": 0,
+        "type": null
       },
       "openssl_conf": {
         "certs": 0,
         "exists": true,
         "path": "/etc/ssl/openssl.cnf",
         "resolved": "/etc/ssl/openssl.cnf",
-        "size": 11118,
+        "size": 11000,
         "type": "file"
       },
-      "valid": true
+      "valid": false
     }
   },
   "default_context": {
@@ -146,7 +146,7 @@
       "AES128-SHA"
     ],
     "maximum_version": "MAXIMUM_SUPPORTED",
-    "minimum_version": "TLSv1_2",
+    "minimum_version": "MINIMUM_SUPPORTED",
     "options_repr": "<Options.OP_ALL|OP_NO_SSLv3|OP_CIPHER_SERVER_PREFERENCE|OP_ENABLE_MIDDLEBOX_COMPAT|OP_NO_COMPRESSION: 2186412116>",
     "verify_flags_repr": "<VerifyFlags.VERIFY_X509_TRUSTED_FIRST: 32768>"
   },
@@ -160,66 +160,57 @@
       "type": null
     },
     "capath": {
-      "certs": 126,
-      "exists": true,
-      "path": "/usr/lib/ssl/certs",
-      "resolved": "/etc/ssl/certs",
-      "size": 253,
-      "type": "dir"
+      "certs": 0,
+      "exists": false,
+      "path": null,
+      "resolved": null,
+      "size": 0,
+      "type": null
     },
     "default_verify_paths": {
       "cafile": null,
-      "capath": "/usr/lib/ssl/certs",
-      "openssl_cafile": "/usr/lib/ssl/cert.pem",
+      "capath": null,
+      "openssl_cafile": "/etc/ssl/cert.pem",
       "openssl_cafile_env": "SSL_CERT_FILE",
-      "openssl_capath": "/usr/lib/ssl/certs",
+      "openssl_capath": "/etc/ssl/certs",
       "openssl_capath_env": "SSL_CERT_DIR"
     },
     "openssl_conf": {
       "certs": 0,
       "exists": true,
-      "path": "/usr/lib/ssl/openssl.cnf",
+      "path": "/etc/ssl/openssl.cnf",
       "resolved": "/etc/ssl/openssl.cnf",
-      "size": 11118,
+      "size": 11000,
       "type": "file"
     },
-    "truststore": true
+    "truststore": false
   },
-  "name": "Debian testing with ca-certificates",
+  "name": "FreeBSD pkg python3",
   "openssl": {
-    "version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "version": "OpenSSL 1.1.1d-freebsd  10 Sep 2019",
     "version_info": [
       1,
       1,
       1,
-      8,
+      4,
       15
     ]
   },
   "os_info": {
-    "os-release": {
-      "BUG_REPORT_URL": "https://bugs.debian.org/",
-      "HOME_URL": "https://www.debian.org/",
-      "ID": "debian",
-      "ID_LIKE": [],
-      "NAME": "Debian GNU/Linux",
-      "PRETTY_NAME": "Debian GNU/Linux bullseye/sid",
-      "SUPPORT_URL": "https://www.debian.org/support"
-    },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1031-azure-x86_64-with-glibc2.29",
-    "sys_platform": "linux"
+    "platform": "FreeBSD-12.1-RELEASE-amd64-64bit-ELF",
+    "sys_platform": "freebsd12"
   },
   "python": {
-    "executable": "/usr/bin/python3",
-    "version": "3.8.6 (default, Sep 25 2020, 09:36:53) \n[GCC 10.2.0]",
+    "executable": "/usr/local/bin/python3",
+    "version": "3.7.9 (default, Oct  3 2020, 01:29:35) \n[Clang 8.0.1 (tags/RELEASE_801/final 366581)]",
     "version_info": [
       3,
-      8,
-      6,
+      7,
+      9,
       "final",
       0
     ]
   },
-  "timestamp": "2020-11-13T11:48:01Z"
+  "timestamp": "2020-11-13T11:51:21Z"
 }

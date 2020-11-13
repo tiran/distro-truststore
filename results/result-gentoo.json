@@ -208,10 +208,11 @@
       "SUPPORT_URL": "https://www.gentoo.org/support/"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1031-azure-x86_64-Intel-R-_Xeon-R-_Platinum_8171M_CPU_@_2.60GHz-with-gentoo-2.7",
+    "platform": "Linux-5.4.0-1031-azure-x86_64-Intel-R-_Xeon-R-_CPU_E5-2673_v4_@_2.30GHz-with-gentoo-2.7",
     "sys_platform": "linux"
   },
   "python": {
+    "executable": "/usr/lib/python-exec/python3.7/python3",
     "version": "3.7.9 (default, Oct 21 2020, 22:22:16) \n[GCC 9.3.0]",
     "version_info": [
       3,
@@ -221,5 +222,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-10T12:21:27Z"
+  "timestamp": "2020-11-13T11:48:14Z"
 }

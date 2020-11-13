@@ -1,9 +1,9 @@
 {
   "can_connect": {
-    "error": null,
-    "exception": null,
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1122)>",
+    "exception": "URLError",
     "url": "https://pypi.org",
-    "verified": true
+    "verified": false
   },
   "candidates_cafile": {
     "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem": {
@@ -71,12 +71,12 @@
       "type": null
     },
     "/etc/ssl/certs/ca-certificates.crt": {
-      "certs": 126,
-      "exists": true,
+      "certs": 0,
+      "exists": false,
       "path": "/etc/ssl/certs/ca-certificates.crt",
-      "resolved": "/etc/ssl/certs/ca-certificates.crt",
-      "size": 198416,
-      "type": "file"
+      "resolved": null,
+      "size": 0,
+      "type": null
     }
   },
   "candidates_openssldir": {
@@ -84,31 +84,7 @@
       "valid": false
     },
     "/etc/ssl": {
-      "cafile": {
-        "certs": 0,
-        "exists": false,
-        "path": "/etc/ssl/cert.pem",
-        "resolved": null,
-        "size": 0,
-        "type": null
-      },
-      "capath": {
-        "certs": 126,
-        "exists": true,
-        "path": "/etc/ssl/certs",
-        "resolved": "/etc/ssl/certs",
-        "size": 253,
-        "type": "dir"
-      },
-      "openssl_conf": {
-        "certs": 0,
-        "exists": true,
-        "path": "/etc/ssl/openssl.cnf",
-        "resolved": "/etc/ssl/openssl.cnf",
-        "size": 11118,
-        "type": "file"
-      },
-      "valid": true
+      "valid": false
     }
   },
   "default_context": {
@@ -146,7 +122,7 @@
       "AES128-SHA"
     ],
     "maximum_version": "MAXIMUM_SUPPORTED",
-    "minimum_version": "TLSv1_2",
+    "minimum_version": "MINIMUM_SUPPORTED",
     "options_repr": "<Options.OP_ALL|OP_NO_SSLv3|OP_CIPHER_SERVER_PREFERENCE|OP_ENABLE_MIDDLEBOX_COMPAT|OP_NO_COMPRESSION: 2186412116>",
     "verify_flags_repr": "<VerifyFlags.VERIFY_X509_TRUSTED_FIRST: 32768>"
   },
@@ -160,16 +136,16 @@
       "type": null
     },
     "capath": {
-      "certs": 126,
-      "exists": true,
-      "path": "/usr/lib/ssl/certs",
-      "resolved": "/etc/ssl/certs",
-      "size": 253,
-      "type": "dir"
+      "certs": 0,
+      "exists": false,
+      "path": null,
+      "resolved": null,
+      "size": 0,
+      "type": null
     },
     "default_verify_paths": {
       "cafile": null,
-      "capath": "/usr/lib/ssl/certs",
+      "capath": null,
       "openssl_cafile": "/usr/lib/ssl/cert.pem",
       "openssl_cafile_env": "SSL_CERT_FILE",
       "openssl_capath": "/usr/lib/ssl/certs",
@@ -177,49 +153,56 @@
     },
     "openssl_conf": {
       "certs": 0,
-      "exists": true,
+      "exists": false,
       "path": "/usr/lib/ssl/openssl.cnf",
-      "resolved": "/etc/ssl/openssl.cnf",
-      "size": 11118,
-      "type": "file"
+      "resolved": null,
+      "size": 0,
+      "type": null
     },
-    "truststore": true
+    "truststore": false
   },
-  "name": "Debian testing with ca-certificates",
+  "name": "Ubuntu Focal with deadsnakes python3.9",
   "openssl": {
-    "version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "version": "OpenSSL 1.1.1f  31 Mar 2020",
     "version_info": [
       1,
       1,
       1,
-      8,
+      6,
       15
     ]
   },
   "os_info": {
     "os-release": {
-      "BUG_REPORT_URL": "https://bugs.debian.org/",
-      "HOME_URL": "https://www.debian.org/",
-      "ID": "debian",
-      "ID_LIKE": [],
-      "NAME": "Debian GNU/Linux",
-      "PRETTY_NAME": "Debian GNU/Linux bullseye/sid",
-      "SUPPORT_URL": "https://www.debian.org/support"
+      "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+      "HOME_URL": "https://www.ubuntu.com/",
+      "ID": "ubuntu",
+      "ID_LIKE": [
+        "debian"
+      ],
+      "NAME": "Ubuntu",
+      "PRETTY_NAME": "Ubuntu 20.04.1 LTS",
+      "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+      "SUPPORT_URL": "https://help.ubuntu.com/",
+      "UBUNTU_CODENAME": "focal",
+      "VERSION": "20.04.1 LTS (Focal Fossa)",
+      "VERSION_CODENAME": "focal",
+      "VERSION_ID": "20.04"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1031-azure-x86_64-with-glibc2.29",
+    "platform": "Linux-5.4.0-1031-azure-x86_64-with-glibc2.31",
     "sys_platform": "linux"
   },
   "python": {
-    "executable": "/usr/bin/python3",
-    "version": "3.8.6 (default, Sep 25 2020, 09:36:53) \n[GCC 10.2.0]",
+    "executable": "/usr/bin/python3.9",
+    "version": "3.9.0+ (default, Oct 20 2020, 08:43:38) \n[GCC 9.3.0]",
     "version_info": [
       3,
-      8,
-      6,
+      9,
+      0,
       "final",
       0
     ]
   },
-  "timestamp": "2020-11-13T11:48:01Z"
+  "timestamp": "2020-11-13T11:48:28Z"
 }

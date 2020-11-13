@@ -200,7 +200,7 @@
     "os-release": {
       "ANSI_COLOR": "0;32",
       "BUG_REPORT_URL": "https://bugs.opensuse.org",
-      "CPE_NAME": "cpe:/o:opensuse:tumbleweed:20201108",
+      "CPE_NAME": "cpe:/o:opensuse:tumbleweed:20201111",
       "DOCUMENTATION_URL": "https://en.opensuse.org/Portal:Tumbleweed",
       "HOME_URL": "https://www.opensuse.org/",
       "ID": "opensuse-tumbleweed",
@@ -211,13 +211,14 @@
       "LOGO": "distributor-logo",
       "NAME": "openSUSE Tumbleweed",
       "PRETTY_NAME": "openSUSE Tumbleweed",
-      "VERSION_ID": "20201108"
+      "VERSION_ID": "20201111"
     },
     "os_name": "posix",
     "platform": "Linux-5.4.0-1031-azure-x86_64-with-glibc2.2.5",
     "sys_platform": "linux"
   },
   "python": {
+    "executable": "/usr/bin/python3",
     "version": "3.8.5 (default, Jul 20 2020, 17:41:41) [GCC]",
     "version_info": [
       3,
@@ -227,5 +228,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-10T12:21:34Z"
+  "timestamp": "2020-11-13T11:48:19Z"
 }

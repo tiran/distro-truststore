@@ -6,6 +6,7 @@ import platform
 import re
 import ssl
 import sys
+import _ssl
 
 try:
     from urllib.request import urlopen
@@ -26,8 +27,7 @@ _pem_re = re.compile(
 )
 # freedesktop.org os-release file
 _osrelease_line = re.compile(
-    "^(?!#)(?P<name>[a-zA-Z0-9_]+)="
-    "(?P<quote>[\"']?)(?P<value>.+)(?P=quote)$"
+    "^(?!#)(?P<name>[a-zA-Z0-9_]+)=" "(?P<quote>[\"']?)(?P<value>.+)(?P=quote)$"
 )
 
 OPENSSLDIR_CANDIDATES = ("/etc/ssl", "/etc/pki/tls")
@@ -47,6 +47,28 @@ CAFILE_CANDIDATES = [
     # OpenSSL default?
     "/etc/ssl/cert.pem",
 ]
+
+
+def rdn_shortname(key):
+    try:
+        short = _ssl.txt2obj(key, True)[1]
+    except (ValueError, KeyError):
+        return key
+    if short:
+        return short
+    else:
+        return key
+
+
+def x509name_oneline(name):
+    result = []
+    for rdns in name:
+        for rdn in rdns:
+            key, value = rdn
+            key = rdn_shortname(key)
+            # no quoting, good enough
+            result.append(u"{0}={1}".format(key, value))
+    return u", ".join(result)
 
 
 def resolve_symlink(path):
@@ -82,9 +104,7 @@ def path_info(path):
             size=len(files),
             certs=len(certs),
         )
-    return dict(
-        path=path, resolved=None, exists=False, type=None, size=0, certs=0,
-    )
+    return dict(path=path, resolved=None, exists=False, type=None, size=0, certs=0,)
 
 
 def read_os_release(filenames=("/etc/os-release", "/usr/lib/os-release")):
@@ -123,9 +143,7 @@ def read_os_release(filenames=("/etc/os-release", "/usr/lib/os-release")):
 
 def os_info():
     result = dict(
-        sys_platform=sys.platform,
-        os_name=os.name,
-        platform=platform.platform(),
+        sys_platform=sys.platform, os_name=os.name, platform=platform.platform(),
     )
     if sys.platform.startswith("linux"):
         result["os-release"] = read_os_release()
@@ -134,9 +152,7 @@ def os_info():
 
 def check_default_verify():
     vp = ssl.get_default_verify_paths()
-    openssl_cnf = os.path.join(
-        os.path.dirname(vp.openssl_cafile), "openssl.cnf"
-    )
+    openssl_cnf = os.path.join(os.path.dirname(vp.openssl_cafile), "openssl.cnf")
     cafile = path_info(vp.cafile)
     capath = path_info(vp.capath)
     return dict(
@@ -159,10 +175,7 @@ def check_openssldir_candidates(candidates=OPENSSLDIR_CANDIDATES):
             openssl_conf = path_info(os.path.join(candidate, "openssl.cnf"))
             valid = bool(cafile["certs"] or capath["certs"])
             result[candidate] = dict(
-                cafile=cafile,
-                capath=capath,
-                openssl_conf=openssl_conf,
-                valid=valid,
+                cafile=cafile, capath=capath, openssl_conf=openssl_conf, valid=valid,
             )
     return result
 
@@ -175,8 +188,10 @@ def check_default_context():
     ctx = ssl.create_default_context()
     result = dict(
         ca_certs_count=len(ctx.get_ca_certs()),
+        ca_certs=sorted(x509name_oneline(ca["subject"]) for ca in ctx.get_ca_certs()),
         options_repr=repr(ctx.options),
         verify_flags_repr=repr(ctx.verify_flags),
+        # ordered cipher names
     )
     if hasattr(ctx, "get_ciphers"):
         result["ciphers"] = [c["name"] for c in ctx.get_ciphers()]
@@ -194,19 +209,9 @@ def check_connect(url="https://pypi.org", timeout=10):
     try:
         urlopen(url, timeout=timeout, context=ctx)
     except Exception as e:
-        return dict(
-            url=url,
-            verified=False,
-            exception=type(e).__name__,
-            error=str(e),
-        )
+        return dict(url=url, verified=False, exception=type(e).__name__, error=str(e),)
     else:
-        return dict(
-            url=url,
-            verified=True,
-            exception=None,
-            error=None,
-        )
+        return dict(url=url, verified=True, exception=None, error=None,)
 
 
 def get_info():
@@ -220,8 +225,7 @@ def get_info():
         candidates_openssldir=check_openssldir_candidates(),
         candidates_cafile=check_cafile_candidates(),
         openssl=dict(
-            version=ssl.OPENSSL_VERSION,
-            version_info=ssl.OPENSSL_VERSION_INFO,
+            version=ssl.OPENSSL_VERSION, version_info=ssl.OPENSSL_VERSION_INFO,
         ),
         python=dict(
             executable=sys.executable,

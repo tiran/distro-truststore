@@ -6,15 +6,13 @@ import sys
 result = {}
 
 for filename in sorted(glob.glob("result*.json")):
-    name = filename[len("result-"):].rsplit(".", 1)[0]
+    name = filename[len("result-") :].rsplit(".", 1)[0]
 
     with open(filename) as f:
         j = json.load(f)
 
     openssldirs = [
-        key
-        for key, value in j["candidates_openssldir"].items()
-        if value["valid"]
+        key for key, value in j["candidates_openssldir"].items() if value["valid"]
     ]
     if j["default_verify"]["truststore"]:
         dvp = dict(
@@ -35,7 +33,7 @@ for filename in sorted(glob.glob("result*.json")):
         default_verify_paths=dvp,
         default_context_can_verify=can_connect,
         default_context_ca_certs_count=ca_certs_count,
-        openssl_version=j["openssl"]["version"]
+        openssl_version=j["openssl"]["version"],
     )
 
 json.dump(result, sys.stdout, indent=2, sort_keys=True)

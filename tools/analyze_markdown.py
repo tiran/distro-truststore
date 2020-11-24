@@ -8,10 +8,10 @@ HEADER = (
     "can verify",
     "loaded CA certs",
     "CA file",
-    "file certs",
+    # "file certs",
     "CA path",
     "path certs",
-    "OpenSSL version",
+    # "OpenSSL version",
 )
 
 
@@ -28,10 +28,10 @@ def analyze():
             ":heavy_check_mark:" if j["can_connect"]["verified"] else ":x:",
             j["default_context"]["ca_certs_count"],
             j["default_verify"]["cafile"]["path"],
-            j["default_verify"]["cafile"]["certs"],
+            # j["default_verify"]["cafile"]["certs"],
             j["default_verify"]["capath"]["path"],
             j["default_verify"]["capath"]["certs"],
-            j["openssl"]["version"],
+            # j["openssl"]["version"],
         )
 
         result.append(entry)

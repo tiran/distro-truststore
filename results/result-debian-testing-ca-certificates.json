@@ -71,11 +71,11 @@
       "type": null
     },
     "/etc/ssl/certs/ca-certificates.crt": {
-      "certs": 126,
+      "certs": 129,
       "exists": true,
       "path": "/etc/ssl/certs/ca-certificates.crt",
       "resolved": "/etc/ssl/certs/ca-certificates.crt",
-      "size": 198416,
+      "size": 200313,
       "type": "file"
     }
   },
@@ -93,11 +93,11 @@
         "type": null
       },
       "capath": {
-        "certs": 126,
+        "certs": 129,
         "exists": true,
         "path": "/etc/ssl/certs",
         "resolved": "/etc/ssl/certs",
-        "size": 253,
+        "size": 259,
         "type": "dir"
       },
       "openssl_conf": {
@@ -161,11 +161,11 @@
       "type": null
     },
     "capath": {
-      "certs": 126,
+      "certs": 129,
       "exists": true,
       "path": "/usr/lib/ssl/certs",
       "resolved": "/etc/ssl/certs",
-      "size": 253,
+      "size": 259,
       "type": "dir"
     },
     "default_verify_paths": {
@@ -188,12 +188,12 @@
   },
   "name": "Debian testing with ca-certificates",
   "openssl": {
-    "version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "version": "OpenSSL 1.1.1i  8 Dec 2020",
     "version_info": [
       1,
       1,
       1,
-      8,
+      9,
       15
     ]
   },
@@ -208,19 +208,19 @@
       "SUPPORT_URL": "https://www.debian.org/support"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1031-azure-x86_64-with-glibc2.29",
+    "platform": "Linux-5.4.0-1039-azure-x86_64-with-glibc2.31",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3",
-    "version": "3.8.6 (default, Sep 25 2020, 09:36:53) \n[GCC 10.2.0]",
+    "version": "3.9.1+ (default, Feb  5 2021, 13:46:56) \n[GCC 10.2.1 20210110]",
     "version_info": [
       3,
-      8,
-      6,
+      9,
+      1,
       "final",
       0
     ]
   },
-  "timestamp": "2020-11-21T13:07:45Z"
+  "timestamp": "2021-02-10T15:49:55Z"
 }

@@ -353,12 +353,12 @@
   },
   "name": "macos-latest",
   "openssl": {
-    "version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "version": "OpenSSL 1.1.1i  8 Dec 2020",
     "version_info": [
       1,
       1,
       1,
-      8,
+      9,
       15
     ]
   },
@@ -368,15 +368,15 @@
     "sys_platform": "darwin"
   },
   "python": {
-    "executable": "/Users/runner/hostedtoolcache/Python/3.8.6/x64/bin/python",
-    "version": "3.8.6 (default, Oct 28 2020, 13:06:29) \n[Clang 11.0.0 (clang-1100.0.33.17)]",
+    "executable": "/Users/runner/hostedtoolcache/Python/3.8.7/x64/bin/python",
+    "version": "3.8.7 (default, Jan 25 2021, 16:16:23) \n[Clang 11.0.0 (clang-1100.0.33.17)]",
     "version_info": [
       3,
       8,
-      6,
+      7,
       "final",
       0
     ]
   },
-  "timestamp": "2020-11-21T13:08:02Z"
+  "timestamp": "2021-02-10T15:50:18Z"
 }

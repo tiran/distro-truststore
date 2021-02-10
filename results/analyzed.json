@@ -9,7 +9,7 @@
       "capath_valid": false
     },
     "name": "alpine:latest",
-    "openssl_version": "OpenSSL 1.1.1g  21 Apr 2020",
+    "openssl_version": "OpenSSL 1.1.1i  8 Dec 2020",
     "openssldirs": [
       "/etc/ssl"
     ]
@@ -54,7 +54,7 @@
       "capath_valid": false
     },
     "name": "CentOS 8",
-    "openssl_version": "OpenSSL 1.1.1c FIPS  28 May 2019",
+    "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
     "openssldirs": [
       "/etc/pki/tls"
     ]
@@ -84,11 +84,18 @@
   },
   "debian-testing": {
     "default_context_ca_certs_count": 0,
-    "default_context_can_verify": false,
-    "default_verify_paths": null,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": null,
+      "cafile_valid": false,
+      "capath": "/usr/lib/ssl/certs",
+      "capath_valid": true
+    },
     "name": "Debian testing",
-    "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
-    "openssldirs": []
+    "openssl_version": "OpenSSL 1.1.1i  8 Dec 2020",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
   },
   "debian-testing-ca-certificates": {
     "default_context_ca_certs_count": 0,
@@ -100,7 +107,7 @@
       "capath_valid": true
     },
     "name": "Debian testing with ca-certificates",
-    "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "openssl_version": "OpenSSL 1.1.1i  8 Dec 2020",
     "openssldirs": [
       "/etc/ssl"
     ]
@@ -115,7 +122,7 @@
       "capath_valid": false
     },
     "name": "Fedora 32",
-    "openssl_version": "OpenSSL 1.1.1g FIPS  21 Apr 2020",
+    "openssl_version": "OpenSSL 1.1.1i FIPS  8 Dec 2020",
     "openssldirs": [
       "/etc/pki/tls"
     ]
@@ -130,7 +137,7 @@
       "capath_valid": false
     },
     "name": "Fedora 33",
-    "openssl_version": "OpenSSL 1.1.1h FIPS 22 Sep 2020",
+    "openssl_version": "OpenSSL 1.1.1i FIPS  8 Dec 2020",
     "openssldirs": [
       "/etc/pki/tls"
     ]
@@ -145,9 +152,10 @@
       "capath_valid": false
     },
     "name": "Fedora 34",
-    "openssl_version": "OpenSSL 1.1.1h FIPS 22 Sep 2020",
+    "openssl_version": "OpenSSL 1.1.1i FIPS  8 Dec 2020",
     "openssldirs": [
-      "/etc/pki/tls"
+      "/etc/pki/tls",
+      "/etc/ssl"
     ]
   },
   "fedora-rawhide": {
@@ -160,9 +168,10 @@
       "capath_valid": false
     },
     "name": "Fedora Rawhode",
-    "openssl_version": "OpenSSL 1.1.1h FIPS 22 Sep 2020",
+    "openssl_version": "OpenSSL 1.1.1i FIPS  8 Dec 2020",
     "openssldirs": [
-      "/etc/pki/tls"
+      "/etc/pki/tls",
+      "/etc/ssl"
     ]
   },
   "freebsd": {
@@ -234,7 +243,7 @@
     ]
   },
   "openwrt": {
-    "default_context_ca_certs_count": 126,
+    "default_context_ca_certs_count": 129,
     "default_context_can_verify": true,
     "default_verify_paths": {
       "cafile": "/etc/ssl/cert.pem",
@@ -243,7 +252,7 @@
       "capath_valid": false
     },
     "name": "OpenWRT RootFS",
-    "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "openssl_version": "OpenSSL 1.1.1i  8 Dec 2020",
     "openssldirs": [
       "/etc/ssl"
     ]
@@ -258,13 +267,13 @@
       "capath_valid": false
     },
     "name": "macos-latest",
-    "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "openssl_version": "OpenSSL 1.1.1i  8 Dec 2020",
     "openssldirs": [
       "/etc/ssl"
     ]
   },
   "os-windows-latest-3.8": {
-    "default_context_ca_certs_count": 354,
+    "default_context_ca_certs_count": 362,
     "default_context_can_verify": true,
     "default_verify_paths": null,
     "name": "windows-latest",

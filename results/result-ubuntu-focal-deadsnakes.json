@@ -1,6 +1,6 @@
 {
   "can_connect": {
-    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1122)>",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1123)>",
     "exception": "URLError",
     "url": "https://pypi.org",
     "verified": false
@@ -182,28 +182,28 @@
         "debian"
       ],
       "NAME": "Ubuntu",
-      "PRETTY_NAME": "Ubuntu 20.04.1 LTS",
+      "PRETTY_NAME": "Ubuntu 20.04.2 LTS",
       "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
       "SUPPORT_URL": "https://help.ubuntu.com/",
       "UBUNTU_CODENAME": "focal",
-      "VERSION": "20.04.1 LTS (Focal Fossa)",
+      "VERSION": "20.04.2 LTS (Focal Fossa)",
       "VERSION_CODENAME": "focal",
       "VERSION_ID": "20.04"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1031-azure-x86_64-with-glibc2.31",
+    "platform": "Linux-5.4.0-1039-azure-x86_64-with-glibc2.31",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3.9",
-    "version": "3.9.0+ (default, Oct 20 2020, 08:43:38) \n[GCC 9.3.0]",
+    "version": "3.9.1 (default, Dec  8 2020, 02:26:20) \n[GCC 9.3.0]",
     "version_info": [
       3,
       9,
-      0,
+      1,
       "final",
       0
     ]
   },
-  "timestamp": "2020-11-21T13:08:24Z"
+  "timestamp": "2021-02-10T15:50:24Z"
 }

@@ -182,16 +182,16 @@
         "debian"
       ],
       "NAME": "Ubuntu",
-      "PRETTY_NAME": "Ubuntu 20.04.1 LTS",
+      "PRETTY_NAME": "Ubuntu 20.04.2 LTS",
       "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
       "SUPPORT_URL": "https://help.ubuntu.com/",
       "UBUNTU_CODENAME": "focal",
-      "VERSION": "20.04.1 LTS (Focal Fossa)",
+      "VERSION": "20.04.2 LTS (Focal Fossa)",
       "VERSION_CODENAME": "focal",
       "VERSION_ID": "20.04"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1031-azure-x86_64-with-glibc2.29",
+    "platform": "Linux-5.4.0-1039-azure-x86_64-with-glibc2.29",
     "sys_platform": "linux"
   },
   "python": {
@@ -205,5 +205,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-21T13:08:16Z"
+  "timestamp": "2021-02-10T15:50:30Z"
 }

@@ -47,11 +47,11 @@
       "type": null
     },
     "/etc/ssl/cert.pem": {
-      "certs": 126,
+      "certs": 129,
       "exists": true,
       "path": "/etc/ssl/cert.pem",
       "resolved": "/etc/ssl/certs/ca-certificates.crt",
-      "size": 198416,
+      "size": 200313,
       "type": "file"
     },
     "/etc/ssl/certs/ca-bundle.crt": {
@@ -71,11 +71,11 @@
       "type": null
     },
     "/etc/ssl/certs/ca-certificates.crt": {
-      "certs": 126,
+      "certs": 129,
       "exists": true,
       "path": "/etc/ssl/certs/ca-certificates.crt",
       "resolved": "/etc/ssl/certs/ca-certificates.crt",
-      "size": 198416,
+      "size": 200313,
       "type": "file"
     }
   },
@@ -85,11 +85,11 @@
     },
     "/etc/ssl": {
       "cafile": {
-        "certs": 126,
+        "certs": 129,
         "exists": true,
         "path": "/etc/ssl/cert.pem",
         "resolved": "/etc/ssl/certs/ca-certificates.crt",
-        "size": 198416,
+        "size": 200313,
         "type": "file"
       },
       "capath": {
@@ -122,7 +122,6 @@
       "C=BM, O=QuoVadis Limited, OU=Root Certification Authority, CN=QuoVadis Root Certification Authority",
       "C=CH, O=SwissSign AG, CN=SwissSign Gold CA - G2",
       "C=CH, O=SwissSign AG, CN=SwissSign Silver CA - G2",
-      "C=CH, O=WISeKey, OU=Copyright (c) 2005, OU=OISTE Foundation Endorsed, CN=OISTE WISeKey Global Root GA CA",
       "C=CH, O=WISeKey, OU=OISTE Foundation Endorsed, CN=OISTE WISeKey Global Root GB CA",
       "C=CH, O=WISeKey, OU=OISTE Foundation Endorsed, CN=OISTE WISeKey Global Root GC CA",
       "C=CN, O=China Financial Certification Authority, CN=CFCA EV ROOT",
@@ -133,7 +132,6 @@
       "C=DE, O=D-Trust GmbH, CN=D-TRUST Root Class 3 CA 2 EV 2009",
       "C=DE, O=T-Systems Enterprise Services GmbH, OU=T-Systems Trust Center, CN=T-TeleSec GlobalRoot Class 2",
       "C=DE, O=T-Systems Enterprise Services GmbH, OU=T-Systems Trust Center, CN=T-TeleSec GlobalRoot Class 3",
-      "C=EE, O=AS Sertifitseerimiskeskus, CN=EE Certification Centre Root CA, emailAddress=pki@sk.ee",
       "C=ES, CN=Autoridad de Certificacion Firmaprofesional CIF A62634068",
       "C=ES, O=Agencia Catalana de Certificacio (NIF Q-0801176-I), OU=Serveis Publics de Certificacio, OU=Vegeu https://www.catcert.net/verarrel (c)03, OU=Jerarquia Entitats de Certificacio Catalanes, CN=EC-ACC",
       "C=ES, O=FNMT-RCM, OU=AC RAIZ FNMT-RCM",
@@ -154,6 +152,7 @@
       "C=HK, O=Hongkong Post, CN=Hongkong Post Root CA 1",
       "C=HK, ST=Hong Kong, L=Hong Kong, O=Hongkong Post, CN=Hongkong Post Root CA 3",
       "C=HU, L=Budapest, O=Microsec Ltd., CN=Microsec e-Szigno Root CA 2009, emailAddress=info@e-szigno.hu",
+      "C=HU, L=Budapest, O=Microsec Ltd., organizationIdentifier=VATHU-23584497, CN=e-Szigno Root CA 2017",
       "C=HU, L=Budapest, O=NetLock Kft., OU=Tan\u00fas\u00edtv\u00e1nykiad\u00f3k (Certification Services), CN=NetLock Arany (Class Gold) F\u0151tan\u00fas\u00edtv\u00e1ny",
       "C=IE, O=Baltimore, OU=CyberTrust, CN=Baltimore CyberTrust Root",
       "C=IN, OU=emSign PKI, O=eMudhra Technologies Limited, CN=emSign ECC Root CA - G3",
@@ -162,9 +161,8 @@
       "C=JP, O=Japan Certification Services, Inc., CN=SecureSign RootCA11",
       "C=JP, O=SECOM Trust Systems CO.,LTD., OU=Security Communication RootCA2",
       "C=JP, O=SECOM Trust.net, OU=Security Communication RootCA1",
-      "C=LU, O=LuxTrust S.A., CN=LuxTrust Global Root 2",
+      "C=KR, O=NAVER BUSINESS PLATFORM Corp., CN=NAVER Global Root Certification Authority",
       "C=NL, O=Staat der Nederlanden, CN=Staat der Nederlanden EV Root CA",
-      "C=NL, O=Staat der Nederlanden, CN=Staat der Nederlanden Root CA - G2",
       "C=NL, O=Staat der Nederlanden, CN=Staat der Nederlanden Root CA - G3",
       "C=NO, O=Buypass AS-983163327, CN=Buypass Class 2 Root CA",
       "C=NO, O=Buypass AS-983163327, CN=Buypass Class 3 Root CA",
@@ -174,12 +172,12 @@
       "C=PL, O=Krajowa Izba Rozliczeniowa S.A., CN=SZAFIR ROOT CA2",
       "C=PL, O=Unizeto Technologies S.A., OU=Certum Certification Authority, CN=Certum Trusted Network CA",
       "C=PL, O=Unizeto Technologies S.A., OU=Certum Certification Authority, CN=Certum Trusted Network CA 2",
+      "C=RO, O=CERTSIGN SA, OU=certSIGN ROOT CA G2",
       "C=RO, O=certSIGN, OU=certSIGN ROOT CA",
       "C=SK, L=Bratislava, O=Disig a.s., CN=CA Disig Root R2",
       "C=TR, L=Ankara, O=E-Tu\u011fra EBG Bili\u015fim Teknolojileri ve Hizmetleri A.\u015e., OU=E-Tugra Sertifikasyon Merkezi, CN=E-Tugra Certification Authority",
       "C=TR, L=Gebze - Kocaeli, O=Turkiye Bilimsel ve Teknolojik Arastirma Kurumu - TUBITAK, OU=Kamu Sertifikasyon Merkezi - Kamu SM, CN=TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 1",
       "C=TW, O=Chunghwa Telecom Co., Ltd., OU=ePKI Root Certification Authority",
-      "C=TW, O=Government Root Certification Authority",
       "C=TW, O=TAIWAN-CA, OU=Root CA, CN=TWCA Global Root CA",
       "C=TW, O=TAIWAN-CA, OU=Root CA, CN=TWCA Root Certification Authority",
       "C=US, O=AffirmTrust, CN=AffirmTrust Commercial",
@@ -202,7 +200,7 @@
       "C=US, O=Entrust, Inc., OU=See www.entrust.net/legal-terms, OU=(c) 2012 Entrust, Inc. - for authorized use only, CN=Entrust Root Certification Authority - EC1",
       "C=US, O=Entrust, Inc., OU=See www.entrust.net/legal-terms, OU=(c) 2015 Entrust, Inc. - for authorized use only, CN=Entrust Root Certification Authority - G4",
       "C=US, O=Entrust, Inc., OU=www.entrust.net/CPS is incorporated by reference, OU=(c) 2006 Entrust, Inc., CN=Entrust Root Certification Authority",
-      "C=US, O=GeoTrust Inc., CN=GeoTrust Universal CA 2",
+      "C=US, O=GeoTrust Inc., OU=(c) 2007 GeoTrust Inc. - For authorized use only, CN=GeoTrust Primary Certification Authority - G2",
       "C=US, O=Google Trust Services LLC, CN=GTS Root R1",
       "C=US, O=Google Trust Services LLC, CN=GTS Root R2",
       "C=US, O=Google Trust Services LLC, CN=GTS Root R3",
@@ -210,18 +208,23 @@
       "C=US, O=IdenTrust, CN=IdenTrust Commercial Root CA 1",
       "C=US, O=IdenTrust, CN=IdenTrust Public Sector Root CA 1",
       "C=US, O=Internet Security Research Group, CN=ISRG Root X1",
+      "C=US, O=Microsoft Corporation, CN=Microsoft ECC Root Certificate Authority 2017",
+      "C=US, O=Microsoft Corporation, CN=Microsoft RSA Root Certificate Authority 2017",
       "C=US, O=Network Solutions L.L.C., CN=Network Solutions Certificate Authority",
       "C=US, O=SecureTrust Corporation, CN=Secure Global CA",
       "C=US, O=SecureTrust Corporation, CN=SecureTrust CA",
       "C=US, O=Starfield Technologies, Inc., OU=Starfield Class 2 Certification Authority",
       "C=US, O=The Go Daddy Group, Inc., OU=Go Daddy Class 2 Certification Authority",
-      "C=US, O=VeriSign, Inc., OU=VeriSign Trust Network, OU=(c) 1999 VeriSign, Inc. - For authorized use only, CN=VeriSign Class 3 Public Primary Certification Authority - G3",
+      "C=US, O=VeriSign, Inc., OU=VeriSign Trust Network, OU=(c) 2008 VeriSign, Inc. - For authorized use only, CN=VeriSign Universal Root Certification Authority",
       "C=US, OU=emSign PKI, O=eMudhra Inc, CN=emSign ECC Root CA - C3",
       "C=US, OU=emSign PKI, O=eMudhra Inc, CN=emSign Root CA - C1",
       "C=US, OU=www.xrampsecurity.com, O=XRamp Security Services Inc, CN=XRamp Global Certification Authority",
       "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., CN=Go Daddy Root Certificate Authority - G2",
       "C=US, ST=Arizona, L=Scottsdale, O=Starfield Technologies, Inc., CN=Starfield Root Certificate Authority - G2",
       "C=US, ST=Arizona, L=Scottsdale, O=Starfield Technologies, Inc., CN=Starfield Services Root Certificate Authority - G2",
+      "C=US, ST=Illinois, L=Chicago, O=Trustwave Holdings, Inc., CN=Trustwave Global Certification Authority",
+      "C=US, ST=Illinois, L=Chicago, O=Trustwave Holdings, Inc., CN=Trustwave Global ECC P256 Certification Authority",
+      "C=US, ST=Illinois, L=Chicago, O=Trustwave Holdings, Inc., CN=Trustwave Global ECC P384 Certification Authority",
       "C=US, ST=New Jersey, L=Jersey City, O=The USERTRUST Network, CN=USERTrust ECC Certification Authority",
       "C=US, ST=New Jersey, L=Jersey City, O=The USERTRUST Network, CN=USERTrust RSA Certification Authority",
       "C=US, ST=Texas, L=Houston, O=SSL Corporation, CN=SSL.com EV Root Certification Authority ECC",
@@ -240,7 +243,7 @@
       "OU=GlobalSign Root CA - R3, O=GlobalSign, CN=GlobalSign",
       "OU=GlobalSign Root CA - R6, O=GlobalSign, CN=GlobalSign"
     ],
-    "ca_certs_count": 126,
+    "ca_certs_count": 129,
     "ciphers": [
       "TLS_AES_256_GCM_SHA384",
       "TLS_CHACHA20_POLY1305_SHA256",
@@ -280,11 +283,11 @@
   },
   "default_verify": {
     "cafile": {
-      "certs": 126,
+      "certs": 129,
       "exists": true,
       "path": "/etc/ssl/cert.pem",
       "resolved": "/etc/ssl/certs/ca-certificates.crt",
-      "size": 198416,
+      "size": 200313,
       "type": "file"
     },
     "capath": {
@@ -315,19 +318,19 @@
   },
   "name": "OpenWRT RootFS",
   "openssl": {
-    "version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "version": "OpenSSL 1.1.1i  8 Dec 2020",
     "version_info": [
       1,
       1,
       1,
-      8,
+      9,
       15
     ]
   },
   "os_info": {
     "os-release": {
       "BUG_URL": "https://bugs.openwrt.org/",
-      "BUILD_ID": "r14985-4d4ef1058c",
+      "BUILD_ID": "r15721-cd2b661453",
       "HOME_URL": "https://openwrt.org/",
       "ID": "openwrt",
       "ID_LIKE": [
@@ -341,7 +344,7 @@
       "OPENWRT_DEVICE_MANUFACTURER_URL": "https://openwrt.org/",
       "OPENWRT_DEVICE_PRODUCT": "Generic",
       "OPENWRT_DEVICE_REVISION": "v0",
-      "OPENWRT_RELEASE": "OpenWrt SNAPSHOT r14985-4d4ef1058c",
+      "OPENWRT_RELEASE": "OpenWrt SNAPSHOT r15721-cd2b661453",
       "OPENWRT_TAINTS": "\"\"",
       "PRETTY_NAME": "OpenWrt SNAPSHOT",
       "SUPPORT_URL": "https://forum.openwrt.org/",
@@ -349,19 +352,19 @@
       "VERSION_ID": "snapshot"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1031-azure-x86_64-with-libc",
+    "platform": "Linux-5.4.0-1039-azure-x86_64-with-libc",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3",
-    "version": "3.9.0 (default, Nov 20 2020, 01:35:43) \n[GCC 8.4.0]",
+    "version": "3.9.1 (default, Feb 09 2021, 12:58:18) \n[GCC 8.4.0]",
     "version_info": [
       3,
       9,
-      0,
+      1,
       "final",
       0
     ]
   },
-  "timestamp": "2020-11-21T13:08:10Z"
+  "timestamp": "2021-02-10T15:50:28Z"
 }

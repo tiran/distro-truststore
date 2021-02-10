@@ -11,7 +11,7 @@ HEADER = (
     # "file certs",
     "CA path",
     "path certs",
-    # "OpenSSL version",
+    "OpenSSL version",
 )
 
 
@@ -31,7 +31,7 @@ def analyze():
             # j["default_verify"]["cafile"]["certs"],
             j["default_verify"]["capath"]["path"],
             j["default_verify"]["capath"]["certs"],
-            # j["openssl"]["version"],
+            j["openssl"]["version"],
         )
 
         result.append(entry)

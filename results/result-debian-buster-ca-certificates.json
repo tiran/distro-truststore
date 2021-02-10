@@ -71,11 +71,11 @@
       "type": null
     },
     "/etc/ssl/certs/ca-certificates.crt": {
-      "certs": 126,
+      "certs": 137,
       "exists": true,
       "path": "/etc/ssl/certs/ca-certificates.crt",
       "resolved": "/etc/ssl/certs/ca-certificates.crt",
-      "size": 198416,
+      "size": 213920,
       "type": "file"
     }
   },
@@ -93,11 +93,11 @@
         "type": null
       },
       "capath": {
-        "certs": 126,
+        "certs": 137,
         "exists": true,
         "path": "/etc/ssl/certs",
         "resolved": "/etc/ssl/certs",
-        "size": 253,
+        "size": 275,
         "type": "dir"
       },
       "openssl_conf": {
@@ -161,11 +161,11 @@
       "type": null
     },
     "capath": {
-      "certs": 126,
+      "certs": 137,
       "exists": true,
       "path": "/usr/lib/ssl/certs",
       "resolved": "/etc/ssl/certs",
-      "size": 253,
+      "size": 275,
       "type": "dir"
     },
     "default_verify_paths": {
@@ -211,7 +211,7 @@
       "VERSION_ID": "10"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1031-azure-x86_64-with-debian-10.6",
+    "platform": "Linux-5.4.0-1039-azure-x86_64-with-debian-10.8",
     "sys_platform": "linux"
   },
   "python": {
@@ -225,5 +225,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-21T13:07:45Z"
+  "timestamp": "2021-02-10T15:49:55Z"
 }

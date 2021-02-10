@@ -71,11 +71,11 @@
       "type": null
     },
     "/etc/ssl/certs/ca-certificates.crt": {
-      "certs": 138,
+      "certs": 129,
       "exists": true,
       "path": "/etc/ssl/certs/ca-certificates.crt",
       "resolved": "/etc/ssl/certs/ca-certificates.crt",
-      "size": 213054,
+      "size": 200313,
       "type": "file"
     }
   },
@@ -93,11 +93,11 @@
         "type": null
       },
       "capath": {
-        "certs": 138,
+        "certs": 129,
         "exists": true,
         "path": "/etc/ssl/certs",
         "resolved": "/etc/ssl/certs",
-        "size": 277,
+        "size": 259,
         "type": "dir"
       },
       "openssl_conf": {
@@ -203,11 +203,11 @@
       "type": null
     },
     "capath": {
-      "certs": 138,
+      "certs": 129,
       "exists": true,
       "path": "/usr/lib/ssl/certs",
       "resolved": "/etc/ssl/certs",
-      "size": 277,
+      "size": 259,
       "type": "dir"
     },
     "default_verify_paths": {
@@ -257,7 +257,7 @@
       "VERSION_ID": "18.04"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1031-azure-x86_64-with-Ubuntu-18.04-bionic",
+    "platform": "Linux-5.4.0-1039-azure-x86_64-with-Ubuntu-18.04-bionic",
     "sys_platform": "linux"
   },
   "python": {
@@ -271,5 +271,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-21T13:07:50Z"
+  "timestamp": "2021-02-10T15:50:04Z"
 }

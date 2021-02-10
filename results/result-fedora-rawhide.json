@@ -47,12 +47,12 @@
       "type": null
     },
     "/etc/ssl/cert.pem": {
-      "certs": 0,
-      "exists": false,
+      "certs": 136,
+      "exists": true,
       "path": "/etc/ssl/cert.pem",
-      "resolved": null,
-      "size": 0,
-      "type": null
+      "resolved": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+      "size": 216090,
+      "type": "file"
     },
     "/etc/ssl/certs/ca-bundle.crt": {
       "certs": 136,
@@ -109,30 +109,30 @@
     },
     "/etc/ssl": {
       "cafile": {
-        "certs": 0,
-        "exists": false,
+        "certs": 136,
+        "exists": true,
         "path": "/etc/ssl/cert.pem",
-        "resolved": null,
-        "size": 0,
-        "type": null
+        "resolved": "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+        "size": 216090,
+        "type": "file"
       },
       "capath": {
         "certs": 0,
         "exists": true,
         "path": "/etc/ssl/certs",
-        "resolved": "/etc/ssl/pki/tls/certs",
+        "resolved": "/etc/pki/tls/certs",
         "size": 2,
         "type": "dir"
       },
       "openssl_conf": {
         "certs": 0,
-        "exists": false,
+        "exists": true,
         "path": "/etc/ssl/openssl.cnf",
-        "resolved": null,
-        "size": 0,
-        "type": null
+        "resolved": "/etc/pki/tls/openssl.cnf",
+        "size": 11229,
+        "type": "file"
       },
-      "valid": false
+      "valid": true
     }
   },
   "default_context": {
@@ -380,12 +380,12 @@
   },
   "name": "Fedora Rawhode",
   "openssl": {
-    "version": "OpenSSL 1.1.1h FIPS 22 Sep 2020",
+    "version": "OpenSSL 1.1.1i FIPS  8 Dec 2020",
     "version_info": [
       1,
       1,
       1,
-      8,
+      9,
       15
     ]
   },
@@ -415,19 +415,19 @@
       "VERSION_ID": "34"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1031-azure-x86_64-with-glibc2.32.9000",
+    "platform": "Linux-5.4.0-1039-azure-x86_64-with-glibc2.32.9000",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3",
-    "version": "3.9.0 (default, Oct  6 2020, 00:00:00) \n[GCC 10.2.1 20201005 (Red Hat 10.2.1-5)]",
+    "version": "3.9.1 (default, Jan 27 2021, 00:00:00) \n[GCC 11.0.0 20210123 (Red Hat 11.0.0-0)]",
     "version_info": [
       3,
       9,
-      0,
+      1,
       "final",
       0
     ]
   },
-  "timestamp": "2020-11-21T13:08:09Z"
+  "timestamp": "2021-02-10T15:51:00Z"
 }

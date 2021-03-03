@@ -1,6 +1,7 @@
 # Reproducer for test_ssl failures and internal error in handshake
 
 * https://bugs.launchpad.net/ubuntu/+source/openssl/+bug/1899878
+* https://bugs.launchpad.net/ubuntu/+source/openssl/+bug/1917625
 * https://bugs.python.org/issue43382
 * https://bugs.python.org/issue41561
 

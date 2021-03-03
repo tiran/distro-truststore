@@ -1,0 +1,8 @@
+FROM debian:testing
+RUN apt update && \
+    apt upgrade -y && \
+    apt install -y python3.9 libpython3.9-testsuite && \
+    apt clean
+
+COPY internalerror.py /
+RUN python3.9 /internalerror.py

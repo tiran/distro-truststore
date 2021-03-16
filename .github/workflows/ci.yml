@@ -60,7 +60,7 @@ jobs:
       - name: checkout
         uses: "actions/checkout@v2"
       - name: Run test in FreeBSD VM
-        uses: vmactions/freebsd-vm@v0.0.8
+        uses: "vmactions/freebsd-vm@v0.1.2"
         with:
           usesh: true
           run: |

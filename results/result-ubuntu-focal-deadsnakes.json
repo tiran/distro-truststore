@@ -1,9 +1,9 @@
 {
   "can_connect": {
-    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1123)>",
-    "exception": "URLError",
+    "error": null,
+    "exception": null,
     "url": "https://pypi.org",
-    "verified": false
+    "verified": true
   },
   "candidates_cafile": {
     "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem": {
@@ -71,12 +71,12 @@
       "type": null
     },
     "/etc/ssl/certs/ca-certificates.crt": {
-      "certs": 0,
-      "exists": false,
+      "certs": 129,
+      "exists": true,
       "path": "/etc/ssl/certs/ca-certificates.crt",
-      "resolved": null,
-      "size": 0,
-      "type": null
+      "resolved": "/etc/ssl/certs/ca-certificates.crt",
+      "size": 200313,
+      "type": "file"
     }
   },
   "candidates_openssldir": {
@@ -84,7 +84,31 @@
       "valid": false
     },
     "/etc/ssl": {
-      "valid": false
+      "cafile": {
+        "certs": 0,
+        "exists": false,
+        "path": "/etc/ssl/cert.pem",
+        "resolved": null,
+        "size": 0,
+        "type": null
+      },
+      "capath": {
+        "certs": 129,
+        "exists": true,
+        "path": "/etc/ssl/certs",
+        "resolved": "/etc/ssl/certs",
+        "size": 259,
+        "type": "dir"
+      },
+      "openssl_conf": {
+        "certs": 0,
+        "exists": true,
+        "path": "/etc/ssl/openssl.cnf",
+        "resolved": "/etc/ssl/openssl.cnf",
+        "size": 10909,
+        "type": "file"
+      },
+      "valid": true
     }
   },
   "default_context": {
@@ -137,16 +161,16 @@
       "type": null
     },
     "capath": {
-      "certs": 0,
-      "exists": false,
-      "path": null,
-      "resolved": null,
-      "size": 0,
-      "type": null
+      "certs": 129,
+      "exists": true,
+      "path": "/usr/lib/ssl/certs",
+      "resolved": "/etc/ssl/certs",
+      "size": 259,
+      "type": "dir"
     },
     "default_verify_paths": {
       "cafile": null,
-      "capath": null,
+      "capath": "/usr/lib/ssl/certs",
       "openssl_cafile": "/usr/lib/ssl/cert.pem",
       "openssl_cafile_env": "SSL_CERT_FILE",
       "openssl_capath": "/usr/lib/ssl/certs",
@@ -154,13 +178,13 @@
     },
     "openssl_conf": {
       "certs": 0,
-      "exists": false,
+      "exists": true,
       "path": "/usr/lib/ssl/openssl.cnf",
-      "resolved": null,
-      "size": 0,
-      "type": null
+      "resolved": "/etc/ssl/openssl.cnf",
+      "size": 10909,
+      "type": "file"
     },
-    "truststore": false
+    "truststore": true
   },
   "name": "Ubuntu Focal with deadsnakes python3.9",
   "openssl": {
@@ -191,19 +215,19 @@
       "VERSION_ID": "20.04"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1039-azure-x86_64-with-glibc2.31",
+    "platform": "Linux-5.4.0-1040-azure-x86_64-with-glibc2.31",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3.9",
-    "version": "3.9.1 (default, Dec  8 2020, 02:26:20) \n[GCC 9.3.0]",
+    "version": "3.9.2 (default, Feb 20 2021, 20:56:08) \n[GCC 9.3.0]",
     "version_info": [
       3,
       9,
-      1,
+      2,
       "final",
       0
     ]
   },
-  "timestamp": "2021-02-10T15:50:24Z"
+  "timestamp": "2021-03-16T19:25:14Z"
 }

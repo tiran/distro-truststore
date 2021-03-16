@@ -188,12 +188,12 @@
   },
   "name": "Debian testing",
   "openssl": {
-    "version": "OpenSSL 1.1.1i  8 Dec 2020",
+    "version": "OpenSSL 1.1.1j  16 Feb 2021",
     "version_info": [
       1,
       1,
       1,
-      9,
+      10,
       15
     ]
   },
@@ -208,19 +208,19 @@
       "SUPPORT_URL": "https://www.debian.org/support"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1039-azure-x86_64-with-glibc2.31",
+    "platform": "Linux-5.4.0-1040-azure-x86_64-with-glibc2.31",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3",
-    "version": "3.9.1+ (default, Feb  5 2021, 13:46:56) \n[GCC 10.2.1 20210110]",
+    "version": "3.9.2 (default, Feb 28 2021, 17:03:44) \n[GCC 10.2.1 20210110]",
     "version_info": [
       3,
       9,
-      1,
+      2,
       "final",
       0
     ]
   },
-  "timestamp": "2021-02-10T15:49:51Z"
+  "timestamp": "2021-03-16T19:24:36Z"
 }

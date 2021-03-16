@@ -318,19 +318,19 @@
   },
   "name": "OpenWRT RootFS",
   "openssl": {
-    "version": "OpenSSL 1.1.1i  8 Dec 2020",
+    "version": "OpenSSL 1.1.1j  16 Feb 2021",
     "version_info": [
       1,
       1,
       1,
-      9,
+      10,
       15
     ]
   },
   "os_info": {
     "os-release": {
       "BUG_URL": "https://bugs.openwrt.org/",
-      "BUILD_ID": "r15721-cd2b661453",
+      "BUILD_ID": "r16184-c1f3c52564",
       "HOME_URL": "https://openwrt.org/",
       "ID": "openwrt",
       "ID_LIKE": [
@@ -344,7 +344,7 @@
       "OPENWRT_DEVICE_MANUFACTURER_URL": "https://openwrt.org/",
       "OPENWRT_DEVICE_PRODUCT": "Generic",
       "OPENWRT_DEVICE_REVISION": "v0",
-      "OPENWRT_RELEASE": "OpenWrt SNAPSHOT r15721-cd2b661453",
+      "OPENWRT_RELEASE": "OpenWrt SNAPSHOT r16184-c1f3c52564",
       "OPENWRT_TAINTS": "\"\"",
       "PRETTY_NAME": "OpenWrt SNAPSHOT",
       "SUPPORT_URL": "https://forum.openwrt.org/",
@@ -352,19 +352,19 @@
       "VERSION_ID": "snapshot"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1039-azure-x86_64-with-libc",
+    "platform": "Linux-5.4.0-1040-azure-x86_64-with-libc",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3",
-    "version": "3.9.1 (default, Feb 09 2021, 12:58:18) \n[GCC 8.4.0]",
+    "version": "3.9.2 (default, Mar 13 2021, 20:18:02) \n[GCC 8.4.0]",
     "version_info": [
       3,
       9,
-      1,
+      2,
       "final",
       0
     ]
   },
-  "timestamp": "2021-02-10T15:50:28Z"
+  "timestamp": "2021-03-16T19:25:07Z"
 }

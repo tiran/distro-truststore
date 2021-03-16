@@ -180,12 +180,12 @@
       "VERSION_ID": "16.04"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1039-azure-x86_64-with-Ubuntu-16.04-xenial",
+    "platform": "Linux-5.4.0-1040-azure-x86_64-with-Ubuntu-16.04-xenial",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3",
-    "version": "3.5.2 (default, Oct  7 2020, 17:19:02) \n[GCC 5.4.0 20160609]",
+    "version": "3.5.2 (default, Jan 26 2021, 13:30:48) \n[GCC 5.4.0 20160609]",
     "version_info": [
       3,
       5,
@@ -194,5 +194,5 @@
       0
     ]
   },
-  "timestamp": "2021-02-10T15:50:36Z"
+  "timestamp": "2021-03-16T19:25:16Z"
 }

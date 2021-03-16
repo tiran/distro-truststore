@@ -191,12 +191,12 @@
       "VERSION_ID": "20.04"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1039-azure-x86_64-with-glibc2.29",
+    "platform": "Linux-5.4.0-1040-azure-x86_64-with-glibc2.29",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3",
-    "version": "3.8.5 (default, Jul 28 2020, 12:59:40) \n[GCC 9.3.0]",
+    "version": "3.8.5 (default, Jan 27 2021, 15:41:15) \n[GCC 9.3.0]",
     "version_info": [
       3,
       8,
@@ -205,5 +205,5 @@
       0
     ]
   },
-  "timestamp": "2021-02-10T15:49:55Z"
+  "timestamp": "2021-03-16T19:24:37Z"
 }

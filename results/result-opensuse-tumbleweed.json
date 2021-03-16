@@ -39,11 +39,11 @@
       "type": null
     },
     "/etc/ssl/ca-bundle.pem": {
-      "certs": 138,
+      "certs": 129,
       "exists": true,
       "path": "/etc/ssl/ca-bundle.pem",
       "resolved": "/etc/var/lib/ca-certificates/ca-bundle.pem",
-      "size": 213543,
+      "size": 200802,
       "type": "file"
     },
     "/etc/ssl/cert.pem": {
@@ -93,11 +93,11 @@
         "type": null
       },
       "capath": {
-        "certs": 276,
+        "certs": 258,
         "exists": true,
         "path": "/etc/ssl/certs",
         "resolved": "/etc/var/lib/ca-certificates/pem",
-        "size": 414,
+        "size": 387,
         "type": "dir"
       },
       "openssl_conf": {
@@ -161,6 +161,7 @@
       "C=JP, O=Japan Certification Services, Inc., CN=SecureSign RootCA11",
       "C=JP, O=SECOM Trust Systems CO.,LTD., OU=Security Communication RootCA2",
       "C=JP, O=SECOM Trust.net, OU=Security Communication RootCA1",
+      "C=KR, O=NAVER BUSINESS PLATFORM Corp., CN=NAVER Global Root Certification Authority",
       "C=NL, O=Staat der Nederlanden, CN=Staat der Nederlanden EV Root CA",
       "C=NL, O=Staat der Nederlanden, CN=Staat der Nederlanden Root CA - G3",
       "C=NO, O=Buypass AS-983163327, CN=Buypass Class 2 Root CA",
@@ -199,12 +200,7 @@
       "C=US, O=Entrust, Inc., OU=See www.entrust.net/legal-terms, OU=(c) 2012 Entrust, Inc. - for authorized use only, CN=Entrust Root Certification Authority - EC1",
       "C=US, O=Entrust, Inc., OU=See www.entrust.net/legal-terms, OU=(c) 2015 Entrust, Inc. - for authorized use only, CN=Entrust Root Certification Authority - G4",
       "C=US, O=Entrust, Inc., OU=www.entrust.net/CPS is incorporated by reference, OU=(c) 2006 Entrust, Inc., CN=Entrust Root Certification Authority",
-      "C=US, O=GeoTrust Inc., CN=GeoTrust Global CA",
-      "C=US, O=GeoTrust Inc., CN=GeoTrust Primary Certification Authority",
-      "C=US, O=GeoTrust Inc., CN=GeoTrust Universal CA",
-      "C=US, O=GeoTrust Inc., CN=GeoTrust Universal CA 2",
       "C=US, O=GeoTrust Inc., OU=(c) 2007 GeoTrust Inc. - For authorized use only, CN=GeoTrust Primary Certification Authority - G2",
-      "C=US, O=GeoTrust Inc., OU=(c) 2008 GeoTrust Inc. - For authorized use only, CN=GeoTrust Primary Certification Authority - G3",
       "C=US, O=Google Trust Services LLC, CN=GTS Root R1",
       "C=US, O=Google Trust Services LLC, CN=GTS Root R2",
       "C=US, O=Google Trust Services LLC, CN=GTS Root R3",
@@ -219,12 +215,7 @@
       "C=US, O=SecureTrust Corporation, CN=SecureTrust CA",
       "C=US, O=Starfield Technologies, Inc., OU=Starfield Class 2 Certification Authority",
       "C=US, O=The Go Daddy Group, Inc., OU=Go Daddy Class 2 Certification Authority",
-      "C=US, O=VeriSign, Inc., OU=VeriSign Trust Network, OU=(c) 2006 VeriSign, Inc. - For authorized use only, CN=VeriSign Class 3 Public Primary Certification Authority - G5",
-      "C=US, O=VeriSign, Inc., OU=VeriSign Trust Network, OU=(c) 2007 VeriSign, Inc. - For authorized use only, CN=VeriSign Class 3 Public Primary Certification Authority - G4",
       "C=US, O=VeriSign, Inc., OU=VeriSign Trust Network, OU=(c) 2008 VeriSign, Inc. - For authorized use only, CN=VeriSign Universal Root Certification Authority",
-      "C=US, O=thawte, Inc., OU=(c) 2007 thawte, Inc. - For authorized use only, CN=thawte Primary Root CA - G2",
-      "C=US, O=thawte, Inc., OU=Certification Services Division, OU=(c) 2006 thawte, Inc. - For authorized use only, CN=thawte Primary Root CA",
-      "C=US, O=thawte, Inc., OU=Certification Services Division, OU=(c) 2008 thawte, Inc. - For authorized use only, CN=thawte Primary Root CA - G3",
       "C=US, OU=emSign PKI, O=eMudhra Inc, CN=emSign ECC Root CA - C3",
       "C=US, OU=emSign PKI, O=eMudhra Inc, CN=emSign Root CA - C1",
       "C=US, OU=www.xrampsecurity.com, O=XRamp Security Services Inc, CN=XRamp Global Certification Authority",
@@ -252,7 +243,7 @@
       "OU=GlobalSign Root CA - R3, O=GlobalSign, CN=GlobalSign",
       "OU=GlobalSign Root CA - R6, O=GlobalSign, CN=GlobalSign"
     ],
-    "ca_certs_count": 138,
+    "ca_certs_count": 129,
     "ciphers": [
       "TLS_AES_256_GCM_SHA384",
       "TLS_CHACHA20_POLY1305_SHA256",
@@ -292,19 +283,19 @@
   },
   "default_verify": {
     "cafile": {
-      "certs": 138,
+      "certs": 129,
       "exists": true,
       "path": "/var/lib/ca-certificates/ca-bundle.pem",
       "resolved": "/var/lib/ca-certificates/ca-bundle.pem",
-      "size": 213543,
+      "size": 200802,
       "type": "file"
     },
     "capath": {
-      "certs": 296,
+      "certs": 278,
       "exists": true,
       "path": "/var/lib/ca-certificates/openssl",
       "resolved": "/var/lib/ca-certificates/openssl",
-      "size": 444,
+      "size": 417,
       "type": "dir"
     },
     "default_verify_paths": {
@@ -327,12 +318,12 @@
   },
   "name": "openSUSE Tumbleweed",
   "openssl": {
-    "version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "version": "OpenSSL 1.1.1j  16 Feb 2021",
     "version_info": [
       1,
       1,
       1,
-      8,
+      10,
       15
     ]
   },
@@ -340,7 +331,7 @@
     "os-release": {
       "ANSI_COLOR": "0;32",
       "BUG_REPORT_URL": "https://bugs.opensuse.org",
-      "CPE_NAME": "cpe:/o:opensuse:tumbleweed:20210208",
+      "CPE_NAME": "cpe:/o:opensuse:tumbleweed:20210315",
       "DOCUMENTATION_URL": "https://en.opensuse.org/Portal:Tumbleweed",
       "HOME_URL": "https://www.opensuse.org/",
       "ID": "opensuse-tumbleweed",
@@ -351,22 +342,22 @@
       "LOGO": "distributor-logo",
       "NAME": "openSUSE Tumbleweed",
       "PRETTY_NAME": "openSUSE Tumbleweed",
-      "VERSION_ID": "20210208"
+      "VERSION_ID": "20210315"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1039-azure-x86_64-with-glibc2.2.5",
+    "platform": "Linux-5.4.0-1040-azure-x86_64-with-glibc2.2.5",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3",
-    "version": "3.8.7 (default, Dec 22 2020, 08:33:13) [GCC]",
+    "version": "3.8.8 (default, Feb 19 2021, 16:53:21) [GCC]",
     "version_info": [
       3,
       8,
-      7,
+      8,
       "final",
       0
     ]
   },
-  "timestamp": "2021-02-10T15:50:28Z"
+  "timestamp": "2021-03-16T19:25:11Z"
 }

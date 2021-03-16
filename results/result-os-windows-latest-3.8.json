@@ -230,7 +230,6 @@
       "C=IT, L=Milan, O=Actalis S.p.A./03358520967, CN=Actalis Authentication Root CA",
       "C=IT, L=Milano, O=Actalis S.p.A./03358520967, CN=Actalis Authentication CA G1",
       "C=JP, O=Japan Certification Services, Inc., CN=SecureSign RootCA1",
-      "C=JP, O=Japan Certification Services, Inc., CN=SecureSign RootCA2",
       "C=JP, O=Japan Certification Services, Inc., CN=SecureSign RootCA3",
       "C=JP, O=Japanese Government, OU=ApplicationCA",
       "C=JP, O=Japanese Government, OU=GPKI, CN=ApplicationCA2 Root",
@@ -356,8 +355,6 @@
       "C=US, O=Microsoft Corporation, CN=Microsoft Azure TLS Issuing CA 05",
       "C=US, O=Microsoft Corporation, CN=Microsoft Azure TLS Issuing CA 06",
       "C=US, O=Microsoft Corporation, CN=Microsoft ECC Root Certificate Authority 2017",
-      "C=US, O=Microsoft Corporation, CN=Microsoft EV ECC Root Certificate Authority 2017",
-      "C=US, O=Microsoft Corporation, CN=Microsoft EV RSA Root Certificate Authority 2017",
       "C=US, O=Microsoft Corporation, CN=Microsoft RSA Root Certificate Authority 2017",
       "C=US, O=Microsoft Corporation, CN=Microsoft RSA TLS CA 01",
       "C=US, O=Microsoft Corporation, CN=Microsoft RSA TLS CA 02",
@@ -452,7 +449,7 @@
       "OU=GlobalSign Root CA - R6, O=GlobalSign, CN=GlobalSign",
       "emailAddress=pki@sk.ee, C=EE, O=AS Sertifitseerimiskeskus, CN=Juur-SK"
     ],
-    "ca_certs_count": 362,
+    "ca_certs_count": 359,
     "ciphers": [
       "TLS_AES_256_GCM_SHA384",
       "TLS_CHACHA20_POLY1305_SHA256",
@@ -527,12 +524,12 @@
   },
   "name": "windows-latest",
   "openssl": {
-    "version": "OpenSSL 1.1.1g  21 Apr 2020",
+    "version": "OpenSSL 1.1.1i  8 Dec 2020",
     "version_info": [
       1,
       1,
       1,
-      7,
+      9,
       15
     ]
   },
@@ -542,15 +539,15 @@
     "sys_platform": "win32"
   },
   "python": {
-    "executable": "C:\\hostedtoolcache\\windows\\Python\\3.8.7\\x64\\python.exe",
-    "version": "3.8.7 (tags/v3.8.7:6503f05, Dec 21 2020, 17:59:51) [MSC v.1928 64 bit (AMD64)]",
+    "executable": "C:\\hostedtoolcache\\windows\\Python\\3.8.8\\x64\\python.exe",
+    "version": "3.8.8 (tags/v3.8.8:024d805, Feb 19 2021, 13:18:16) [MSC v.1928 64 bit (AMD64)]",
     "version_info": [
       3,
       8,
-      7,
+      8,
       "final",
       0
     ]
   },
-  "timestamp": "2021-02-10T15:50:19Z"
+  "timestamp": "2021-03-16T19:25:16Z"
 }

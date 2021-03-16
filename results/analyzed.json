@@ -9,13 +9,13 @@
       "capath_valid": false
     },
     "name": "alpine:latest",
-    "openssl_version": "OpenSSL 1.1.1i  8 Dec 2020",
+    "openssl_version": "OpenSSL 1.1.1j  16 Feb 2021",
     "openssldirs": [
       "/etc/ssl"
     ]
   },
   "archlinux": {
-    "default_context_ca_certs_count": 138,
+    "default_context_ca_certs_count": 129,
     "default_context_can_verify": true,
     "default_verify_paths": {
       "cafile": "/etc/ssl/cert.pem",
@@ -24,7 +24,7 @@
       "capath_valid": true
     },
     "name": "archlinux:latest",
-    "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "openssl_version": "OpenSSL 1.1.1j  16 Feb 2021",
     "openssldirs": [
       "/etc/ssl"
     ]
@@ -92,7 +92,7 @@
       "capath_valid": true
     },
     "name": "Debian testing",
-    "openssl_version": "OpenSSL 1.1.1i  8 Dec 2020",
+    "openssl_version": "OpenSSL 1.1.1j  16 Feb 2021",
     "openssldirs": [
       "/etc/ssl"
     ]
@@ -107,7 +107,7 @@
       "capath_valid": true
     },
     "name": "Debian testing with ca-certificates",
-    "openssl_version": "OpenSSL 1.1.1i  8 Dec 2020",
+    "openssl_version": "OpenSSL 1.1.1j  16 Feb 2021",
     "openssldirs": [
       "/etc/ssl"
     ]
@@ -137,7 +137,7 @@
       "capath_valid": false
     },
     "name": "Fedora 33",
-    "openssl_version": "OpenSSL 1.1.1i FIPS  8 Dec 2020",
+    "openssl_version": "OpenSSL 1.1.1j  FIPS 16 Feb 2021",
     "openssldirs": [
       "/etc/pki/tls"
     ]
@@ -152,7 +152,7 @@
       "capath_valid": false
     },
     "name": "Fedora 34",
-    "openssl_version": "OpenSSL 1.1.1i FIPS  8 Dec 2020",
+    "openssl_version": "OpenSSL 1.1.1j  FIPS 16 Feb 2021",
     "openssldirs": [
       "/etc/pki/tls",
       "/etc/ssl"
@@ -168,7 +168,7 @@
       "capath_valid": false
     },
     "name": "Fedora Rawhode",
-    "openssl_version": "OpenSSL 1.1.1i FIPS  8 Dec 2020",
+    "openssl_version": "OpenSSL 1.1.1j  FIPS 16 Feb 2021",
     "openssldirs": [
       "/etc/pki/tls",
       "/etc/ssl"
@@ -176,11 +176,18 @@
   },
   "freebsd": {
     "default_context_ca_certs_count": 0,
-    "default_context_can_verify": false,
-    "default_verify_paths": null,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": null,
+      "cafile_valid": false,
+      "capath": "/etc/ssl/certs",
+      "capath_valid": true
+    },
     "name": "FreeBSD pkg python3",
-    "openssl_version": "OpenSSL 1.1.1d-freebsd  10 Sep 2019",
-    "openssldirs": []
+    "openssl_version": "OpenSSL 1.1.1h-freebsd  22 Sep 2020",
+    "openssldirs": [
+      "/etc/ssl"
+    ]
   },
   "freebsd-ca_root_nss": {
     "default_context_ca_certs_count": 148,
@@ -188,11 +195,11 @@
     "default_verify_paths": {
       "cafile": "/etc/ssl/cert.pem",
       "cafile_valid": true,
-      "capath": null,
-      "capath_valid": false
+      "capath": "/etc/ssl/certs",
+      "capath_valid": true
     },
     "name": "FreeBSD pkg python3 ca_root_nss",
-    "openssl_version": "OpenSSL 1.1.1d-freebsd  10 Sep 2019",
+    "openssl_version": "OpenSSL 1.1.1h-freebsd  22 Sep 2020",
     "openssldirs": [
       "/etc/ssl"
     ]
@@ -207,7 +214,7 @@
       "capath_valid": true
     },
     "name": "Gentoo Stage 3 latest",
-    "openssl_version": "OpenSSL 1.1.1g  21 Apr 2020",
+    "openssl_version": "OpenSSL 1.1.1j  16 Feb 2021",
     "openssldirs": [
       "/etc/ssl"
     ]
@@ -228,7 +235,7 @@
     ]
   },
   "opensuse-tumbleweed": {
-    "default_context_ca_certs_count": 138,
+    "default_context_ca_certs_count": 129,
     "default_context_can_verify": true,
     "default_verify_paths": {
       "cafile": "/var/lib/ca-certificates/ca-bundle.pem",
@@ -237,7 +244,7 @@
       "capath_valid": true
     },
     "name": "openSUSE Tumbleweed",
-    "openssl_version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "openssl_version": "OpenSSL 1.1.1j  16 Feb 2021",
     "openssldirs": [
       "/etc/ssl"
     ]
@@ -252,7 +259,7 @@
       "capath_valid": false
     },
     "name": "OpenWRT RootFS",
-    "openssl_version": "OpenSSL 1.1.1i  8 Dec 2020",
+    "openssl_version": "OpenSSL 1.1.1j  16 Feb 2021",
     "openssldirs": [
       "/etc/ssl"
     ]
@@ -267,17 +274,17 @@
       "capath_valid": false
     },
     "name": "macos-latest",
-    "openssl_version": "OpenSSL 1.1.1i  8 Dec 2020",
+    "openssl_version": "OpenSSL 1.1.1j  16 Feb 2021",
     "openssldirs": [
       "/etc/ssl"
     ]
   },
   "os-windows-latest-3.8": {
-    "default_context_ca_certs_count": 362,
+    "default_context_ca_certs_count": 359,
     "default_context_can_verify": true,
     "default_verify_paths": null,
     "name": "windows-latest",
-    "openssl_version": "OpenSSL 1.1.1g  21 Apr 2020",
+    "openssl_version": "OpenSSL 1.1.1i  8 Dec 2020",
     "openssldirs": []
   },
   "rhel8-ubi": {
@@ -335,11 +342,18 @@
   },
   "ubuntu-focal-deadsnakes": {
     "default_context_ca_certs_count": 0,
-    "default_context_can_verify": false,
-    "default_verify_paths": null,
+    "default_context_can_verify": true,
+    "default_verify_paths": {
+      "cafile": null,
+      "cafile_valid": false,
+      "capath": "/usr/lib/ssl/certs",
+      "capath_valid": true
+    },
     "name": "Ubuntu Focal with deadsnakes python3.9",
     "openssl_version": "OpenSSL 1.1.1f  31 Mar 2020",
-    "openssldirs": []
+    "openssldirs": [
+      "/etc/ssl"
+    ]
   },
   "ubuntu-groovy": {
     "default_context_ca_certs_count": 0,

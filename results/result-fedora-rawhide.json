@@ -380,12 +380,12 @@
   },
   "name": "Fedora Rawhode",
   "openssl": {
-    "version": "OpenSSL 1.1.1i FIPS  8 Dec 2020",
+    "version": "OpenSSL 1.1.1j  FIPS 16 Feb 2021",
     "version_info": [
       1,
       1,
       1,
-      9,
+      10,
       15
     ]
   },
@@ -393,15 +393,15 @@
     "os-release": {
       "ANSI_COLOR": "0;38;2;60;110;180",
       "BUG_REPORT_URL": "https://bugzilla.redhat.com/",
-      "CPE_NAME": "cpe:/o:fedoraproject:fedora:34",
+      "CPE_NAME": "cpe:/o:fedoraproject:fedora:35",
       "DOCUMENTATION_URL": "https://docs.fedoraproject.org/en-US/fedora/rawhide/system-administrators-guide/",
       "HOME_URL": "https://fedoraproject.org/",
       "ID": "fedora",
       "ID_LIKE": [],
       "LOGO": "fedora-logo-icon",
       "NAME": "Fedora",
-      "PLATFORM_ID": "platform:f34",
-      "PRETTY_NAME": "Fedora 34 (Container Image Prerelease)",
+      "PLATFORM_ID": "platform:f35",
+      "PRETTY_NAME": "Fedora 35 (Container Image Prerelease)",
       "PRIVACY_POLICY_URL": "https://fedoraproject.org/wiki/Legal:PrivacyPolicy",
       "REDHAT_BUGZILLA_PRODUCT": "Fedora",
       "REDHAT_BUGZILLA_PRODUCT_VERSION": "rawhide",
@@ -410,24 +410,24 @@
       "SUPPORT_URL": "https://fedoraproject.org/wiki/Communicating_and_getting_help",
       "VARIANT": "Container Image",
       "VARIANT_ID": "container",
-      "VERSION": "34 (Container Image Prerelease)",
+      "VERSION": "35 (Container Image Prerelease)",
       "VERSION_CODENAME": "\"\"",
-      "VERSION_ID": "34"
+      "VERSION_ID": "35"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1039-azure-x86_64-with-glibc2.32.9000",
+    "platform": "Linux-5.4.0-1040-azure-x86_64-with-glibc2.33.9000",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3",
-    "version": "3.9.1 (default, Jan 27 2021, 00:00:00) \n[GCC 11.0.0 20210123 (Red Hat 11.0.0-0)]",
+    "version": "3.9.2 (default, Feb 20 2021, 00:00:00) \n[GCC 11.0.0 20210210 (Red Hat 11.0.0-0)]",
     "version_info": [
       3,
       9,
-      1,
+      2,
       "final",
       0
     ]
   },
-  "timestamp": "2021-02-10T15:51:00Z"
+  "timestamp": "2021-03-16T19:25:35Z"
 }

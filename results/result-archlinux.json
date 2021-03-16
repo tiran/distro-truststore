@@ -47,11 +47,11 @@
       "type": null
     },
     "/etc/ssl/cert.pem": {
-      "certs": 138,
+      "certs": 129,
       "exists": true,
       "path": "/etc/ssl/cert.pem",
       "resolved": "/etc/ssl/ca-certificates/extracted/tls-ca-bundle.pem",
-      "size": 217414,
+      "size": 204335,
       "type": "file"
     },
     "/etc/ssl/certs/ca-bundle.crt": {
@@ -71,11 +71,11 @@
       "type": null
     },
     "/etc/ssl/certs/ca-certificates.crt": {
-      "certs": 138,
+      "certs": 129,
       "exists": true,
       "path": "/etc/ssl/certs/ca-certificates.crt",
       "resolved": "/etc/ssl/ca-certificates/extracted/tls-ca-bundle.pem",
-      "size": 217414,
+      "size": 204335,
       "type": "file"
     }
   },
@@ -85,19 +85,19 @@
     },
     "/etc/ssl": {
       "cafile": {
-        "certs": 138,
+        "certs": 129,
         "exists": true,
         "path": "/etc/ssl/cert.pem",
         "resolved": "/etc/ssl/ca-certificates/extracted/tls-ca-bundle.pem",
-        "size": 217414,
+        "size": 204335,
         "type": "file"
       },
       "capath": {
-        "certs": 276,
+        "certs": 258,
         "exists": true,
         "path": "/etc/ssl/certs",
         "resolved": "/etc/ssl/certs",
-        "size": 417,
+        "size": 390,
         "type": "dir"
       },
       "openssl_conf": {
@@ -161,6 +161,7 @@
       "C=JP, O=Japan Certification Services, Inc., CN=SecureSign RootCA11",
       "C=JP, O=SECOM Trust Systems CO.,LTD., OU=Security Communication RootCA2",
       "C=JP, O=SECOM Trust.net, OU=Security Communication RootCA1",
+      "C=KR, O=NAVER BUSINESS PLATFORM Corp., CN=NAVER Global Root Certification Authority",
       "C=NL, O=Staat der Nederlanden, CN=Staat der Nederlanden EV Root CA",
       "C=NL, O=Staat der Nederlanden, CN=Staat der Nederlanden Root CA - G3",
       "C=NO, O=Buypass AS-983163327, CN=Buypass Class 2 Root CA",
@@ -199,12 +200,7 @@
       "C=US, O=Entrust, Inc., OU=See www.entrust.net/legal-terms, OU=(c) 2012 Entrust, Inc. - for authorized use only, CN=Entrust Root Certification Authority - EC1",
       "C=US, O=Entrust, Inc., OU=See www.entrust.net/legal-terms, OU=(c) 2015 Entrust, Inc. - for authorized use only, CN=Entrust Root Certification Authority - G4",
       "C=US, O=Entrust, Inc., OU=www.entrust.net/CPS is incorporated by reference, OU=(c) 2006 Entrust, Inc., CN=Entrust Root Certification Authority",
-      "C=US, O=GeoTrust Inc., CN=GeoTrust Global CA",
-      "C=US, O=GeoTrust Inc., CN=GeoTrust Primary Certification Authority",
-      "C=US, O=GeoTrust Inc., CN=GeoTrust Universal CA",
-      "C=US, O=GeoTrust Inc., CN=GeoTrust Universal CA 2",
       "C=US, O=GeoTrust Inc., OU=(c) 2007 GeoTrust Inc. - For authorized use only, CN=GeoTrust Primary Certification Authority - G2",
-      "C=US, O=GeoTrust Inc., OU=(c) 2008 GeoTrust Inc. - For authorized use only, CN=GeoTrust Primary Certification Authority - G3",
       "C=US, O=Google Trust Services LLC, CN=GTS Root R1",
       "C=US, O=Google Trust Services LLC, CN=GTS Root R2",
       "C=US, O=Google Trust Services LLC, CN=GTS Root R3",
@@ -219,12 +215,7 @@
       "C=US, O=SecureTrust Corporation, CN=SecureTrust CA",
       "C=US, O=Starfield Technologies, Inc., OU=Starfield Class 2 Certification Authority",
       "C=US, O=The Go Daddy Group, Inc., OU=Go Daddy Class 2 Certification Authority",
-      "C=US, O=VeriSign, Inc., OU=VeriSign Trust Network, OU=(c) 2006 VeriSign, Inc. - For authorized use only, CN=VeriSign Class 3 Public Primary Certification Authority - G5",
-      "C=US, O=VeriSign, Inc., OU=VeriSign Trust Network, OU=(c) 2007 VeriSign, Inc. - For authorized use only, CN=VeriSign Class 3 Public Primary Certification Authority - G4",
       "C=US, O=VeriSign, Inc., OU=VeriSign Trust Network, OU=(c) 2008 VeriSign, Inc. - For authorized use only, CN=VeriSign Universal Root Certification Authority",
-      "C=US, O=thawte, Inc., OU=(c) 2007 thawte, Inc. - For authorized use only, CN=thawte Primary Root CA - G2",
-      "C=US, O=thawte, Inc., OU=Certification Services Division, OU=(c) 2006 thawte, Inc. - For authorized use only, CN=thawte Primary Root CA",
-      "C=US, O=thawte, Inc., OU=Certification Services Division, OU=(c) 2008 thawte, Inc. - For authorized use only, CN=thawte Primary Root CA - G3",
       "C=US, OU=emSign PKI, O=eMudhra Inc, CN=emSign ECC Root CA - C3",
       "C=US, OU=emSign PKI, O=eMudhra Inc, CN=emSign Root CA - C1",
       "C=US, OU=www.xrampsecurity.com, O=XRamp Security Services Inc, CN=XRamp Global Certification Authority",
@@ -252,7 +243,7 @@
       "OU=GlobalSign Root CA - R3, O=GlobalSign, CN=GlobalSign",
       "OU=GlobalSign Root CA - R6, O=GlobalSign, CN=GlobalSign"
     ],
-    "ca_certs_count": 138,
+    "ca_certs_count": 129,
     "ciphers": [
       "TLS_AES_256_GCM_SHA384",
       "TLS_CHACHA20_POLY1305_SHA256",
@@ -292,19 +283,19 @@
   },
   "default_verify": {
     "cafile": {
-      "certs": 138,
+      "certs": 129,
       "exists": true,
       "path": "/etc/ssl/cert.pem",
       "resolved": "/etc/ssl/ca-certificates/extracted/tls-ca-bundle.pem",
-      "size": 217414,
+      "size": 204335,
       "type": "file"
     },
     "capath": {
-      "certs": 276,
+      "certs": 258,
       "exists": true,
       "path": "/etc/ssl/certs",
       "resolved": "/etc/ssl/certs",
-      "size": 417,
+      "size": 390,
       "type": "dir"
     },
     "default_verify_paths": {
@@ -327,12 +318,12 @@
   },
   "name": "archlinux:latest",
   "openssl": {
-    "version": "OpenSSL 1.1.1h  22 Sep 2020",
+    "version": "OpenSSL 1.1.1j  16 Feb 2021",
     "version_info": [
       1,
       1,
       1,
-      8,
+      10,
       15
     ]
   },
@@ -351,19 +342,19 @@
       "SUPPORT_URL": "https://bbs.archlinux.org/"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1031-azure-x86_64-with-glibc2.2.5",
+    "platform": "Linux-5.4.0-1040-azure-x86_64-with-glibc2.33",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/sbin/python3",
-    "version": "3.8.6 (default, Sep 30 2020, 04:00:38) \n[GCC 10.2.0]",
+    "version": "3.9.2 (default, Feb 20 2021, 18:40:11) \n[GCC 10.2.0]",
     "version_info": [
       3,
-      8,
-      6,
+      9,
+      2,
       "final",
       0
     ]
   },
-  "timestamp": "2020-11-21T13:07:49Z"
+  "timestamp": "2021-03-16T19:24:42Z"
 }

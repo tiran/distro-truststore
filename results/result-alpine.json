@@ -326,12 +326,12 @@
   },
   "name": "alpine:latest",
   "openssl": {
-    "version": "OpenSSL 1.1.1i  8 Dec 2020",
+    "version": "OpenSSL 1.1.1j  16 Feb 2021",
     "version_info": [
       1,
       1,
       1,
-      9,
+      10,
       15
     ]
   },
@@ -343,22 +343,22 @@
       "ID_LIKE": [],
       "NAME": "Alpine Linux",
       "PRETTY_NAME": "Alpine Linux v3.13",
-      "VERSION_ID": "3.13.1"
+      "VERSION_ID": "3.13.2"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1039-azure-x86_64-with",
+    "platform": "Linux-5.4.0-1040-azure-x86_64-with",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3",
-    "version": "3.8.7 (default, Dec 26 2020, 08:45:55) \n[GCC 10.2.1 20201203]",
+    "version": "3.8.8 (default, Mar 15 2021, 13:10:14) \n[GCC 10.2.1 20201203]",
     "version_info": [
       3,
       8,
-      7,
+      8,
       "final",
       0
     ]
   },
-  "timestamp": "2021-02-10T15:49:41Z"
+  "timestamp": "2021-03-16T19:24:27Z"
 }

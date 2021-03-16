@@ -1,9 +1,9 @@
 {
   "can_connect": {
-    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1091)>",
-    "exception": "URLError",
+    "error": null,
+    "exception": null,
     "url": "https://pypi.org",
-    "verified": false
+    "verified": true
   },
   "candidates_cafile": {
     "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem": {
@@ -93,12 +93,12 @@
         "type": null
       },
       "capath": {
-        "certs": 0,
-        "exists": false,
+        "certs": 148,
+        "exists": true,
         "path": "/etc/ssl/certs",
-        "resolved": null,
-        "size": 0,
-        "type": null
+        "resolved": "/etc/ssl/certs",
+        "size": 148,
+        "type": "dir"
       },
       "openssl_conf": {
         "certs": 0,
@@ -108,7 +108,7 @@
         "size": 11000,
         "type": "file"
       },
-      "valid": false
+      "valid": true
     }
   },
   "default_context": {
@@ -161,16 +161,16 @@
       "type": null
     },
     "capath": {
-      "certs": 0,
-      "exists": false,
-      "path": null,
-      "resolved": null,
-      "size": 0,
-      "type": null
+      "certs": 148,
+      "exists": true,
+      "path": "/etc/ssl/certs",
+      "resolved": "/etc/ssl/certs",
+      "size": 148,
+      "type": "dir"
     },
     "default_verify_paths": {
       "cafile": null,
-      "capath": null,
+      "capath": "/etc/ssl/certs",
       "openssl_cafile": "/etc/ssl/cert.pem",
       "openssl_cafile_env": "SSL_CERT_FILE",
       "openssl_capath": "/etc/ssl/certs",
@@ -184,27 +184,27 @@
       "size": 11000,
       "type": "file"
     },
-    "truststore": false
+    "truststore": true
   },
   "name": "FreeBSD pkg python3",
   "openssl": {
-    "version": "OpenSSL 1.1.1d-freebsd  10 Sep 2019",
+    "version": "OpenSSL 1.1.1h-freebsd  22 Sep 2020",
     "version_info": [
       1,
       1,
       1,
-      4,
+      8,
       15
     ]
   },
   "os_info": {
     "os_name": "posix",
-    "platform": "FreeBSD-12.1-RELEASE-amd64-64bit-ELF",
+    "platform": "FreeBSD-12.2-RELEASE-amd64-64bit-ELF",
     "sys_platform": "freebsd12"
   },
   "python": {
     "executable": "/usr/local/bin/python3",
-    "version": "3.7.9 (default, Oct  3 2020, 01:29:35) \n[Clang 8.0.1 (tags/RELEASE_801/final 366581)]",
+    "version": "3.7.9 (default, Feb 25 2021, 01:18:27) \n[Clang 10.0.1 (git@github.com:llvm/llvm-project.git llvmorg-10.0.1-0-gef32c611a",
     "version_info": [
       3,
       7,
@@ -213,5 +213,5 @@
       0
     ]
   },
-  "timestamp": "2020-11-21T13:13:44Z"
+  "timestamp": "2021-03-16T19:29:57Z"
 }

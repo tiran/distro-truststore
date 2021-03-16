@@ -3,34 +3,33 @@ Linux distribution CA store test
 
 Name | can verify | loaded CA certs | CA file | CA path | path certs | OpenSSL version
 --- | --- | --- | --- | --- | --- | ---
-alpine:latest | :heavy_check_mark: | 137 | /etc/ssl/cert.pem | /etc/ssl/certs | 0 | OpenSSL 1.1.1i  8 Dec 2020
-archlinux:latest | :heavy_check_mark: | 138 | /etc/ssl/cert.pem | /etc/ssl/certs | 276 | OpenSSL 1.1.1h  22 Sep 2020
+alpine:latest | :heavy_check_mark: | 137 | /etc/ssl/cert.pem | /etc/ssl/certs | 0 | OpenSSL 1.1.1j  16 Feb 2021
+archlinux:latest | :heavy_check_mark: | 129 | /etc/ssl/cert.pem | /etc/ssl/certs | 258 | OpenSSL 1.1.1j  16 Feb 2021
 CentOS 7 | :heavy_check_mark: | 136 | /etc/pki/tls/cert.pem | /etc/pki/tls/certs | 0 | OpenSSL 1.0.2k-fips  26 Jan 2017
 CentOS 8 | :heavy_check_mark: | 136 | /etc/pki/tls/cert.pem | /etc/pki/tls/certs | 0 | OpenSSL 1.1.1g FIPS  21 Apr 2020
 Debian Buster with ca-certificates | :heavy_check_mark: | 0 |  | /usr/lib/ssl/certs | 137 | OpenSSL 1.1.1d  10 Sep 2019
 Debian Buster | :x: | 0 |  |  | 0 | OpenSSL 1.1.1d  10 Sep 2019
-Debian testing with ca-certificates | :heavy_check_mark: | 0 |  | /usr/lib/ssl/certs | 129 | OpenSSL 1.1.1i  8 Dec 2020
-Debian testing | :heavy_check_mark: | 0 |  | /usr/lib/ssl/certs | 129 | OpenSSL 1.1.1i  8 Dec 2020
+Debian testing with ca-certificates | :heavy_check_mark: | 0 |  | /usr/lib/ssl/certs | 129 | OpenSSL 1.1.1j  16 Feb 2021
+Debian testing | :heavy_check_mark: | 0 |  | /usr/lib/ssl/certs | 129 | OpenSSL 1.1.1j  16 Feb 2021
 Fedora 32 | :heavy_check_mark: | 136 | /etc/pki/tls/cert.pem | /etc/pki/tls/certs | 0 | OpenSSL 1.1.1i FIPS  8 Dec 2020
-Fedora 33 | :heavy_check_mark: | 136 | /etc/pki/tls/cert.pem | /etc/pki/tls/certs | 0 | OpenSSL 1.1.1i FIPS  8 Dec 2020
-Fedora 34 | :heavy_check_mark: | 136 | /etc/pki/tls/cert.pem | /etc/pki/tls/certs | 0 | OpenSSL 1.1.1i FIPS  8 Dec 2020
-Fedora Rawhode | :heavy_check_mark: | 136 | /etc/pki/tls/cert.pem | /etc/pki/tls/certs | 0 | OpenSSL 1.1.1i FIPS  8 Dec 2020
-FreeBSD pkg python3 ca_root_nss | :heavy_check_mark: | 148 | /etc/ssl/cert.pem |  | 0 | OpenSSL 1.1.1d-freebsd  10 Sep 2019
-FreeBSD pkg python3 | :x: | 0 |  |  | 0 | OpenSSL 1.1.1d-freebsd  10 Sep 2019
-Gentoo Stage 3 latest | :heavy_check_mark: | 0 |  | /etc/ssl/certs | 126 | OpenSSL 1.1.1g  21 Apr 2020
+Fedora 33 | :heavy_check_mark: | 136 | /etc/pki/tls/cert.pem | /etc/pki/tls/certs | 0 | OpenSSL 1.1.1j  FIPS 16 Feb 2021
+Fedora 34 | :heavy_check_mark: | 136 | /etc/pki/tls/cert.pem | /etc/pki/tls/certs | 0 | OpenSSL 1.1.1j  FIPS 16 Feb 2021
+Fedora Rawhode | :heavy_check_mark: | 136 | /etc/pki/tls/cert.pem | /etc/pki/tls/certs | 0 | OpenSSL 1.1.1j  FIPS 16 Feb 2021
+FreeBSD pkg python3 ca_root_nss | :heavy_check_mark: | 148 | /etc/ssl/cert.pem | /etc/ssl/certs | 148 | OpenSSL 1.1.1h-freebsd  22 Sep 2020
+FreeBSD pkg python3 | :heavy_check_mark: | 0 |  | /etc/ssl/certs | 148 | OpenSSL 1.1.1h-freebsd  22 Sep 2020
+Gentoo Stage 3 latest | :heavy_check_mark: | 0 |  | /etc/ssl/certs | 126 | OpenSSL 1.1.1j  16 Feb 2021
 Linux Mint 19.3 | :heavy_check_mark: | 0 |  | /usr/lib/ssl/certs | 129 | OpenSSL 1.1.1  11 Sep 2018
-openSUSE Tumbleweed | :heavy_check_mark: | 138 | /var/lib/ca-certificates/ca-bundle.pem | /var/lib/ca-certificates/openssl | 296 | OpenSSL 1.1.1h  22 Sep 2020
-OpenWRT RootFS | :heavy_check_mark: | 129 | /etc/ssl/cert.pem | /etc/ssl/certs | 0 | OpenSSL 1.1.1i  8 Dec 2020
-macos-latest | :heavy_check_mark: | 164 | /usr/local/etc/openssl@1.1/cert.pem | /usr/local/etc/openssl@1.1/certs | 0 | OpenSSL 1.1.1i  8 Dec 2020
-windows-latest | :heavy_check_mark: | 362 |  |  | 0 | OpenSSL 1.1.1g  21 Apr 2020
+openSUSE Tumbleweed | :heavy_check_mark: | 129 | /var/lib/ca-certificates/ca-bundle.pem | /var/lib/ca-certificates/openssl | 278 | OpenSSL 1.1.1j  16 Feb 2021
+OpenWRT RootFS | :heavy_check_mark: | 129 | /etc/ssl/cert.pem | /etc/ssl/certs | 0 | OpenSSL 1.1.1j  16 Feb 2021
+macos-latest | :heavy_check_mark: | 164 | /usr/local/etc/openssl@1.1/cert.pem | /usr/local/etc/openssl@1.1/certs | 0 | OpenSSL 1.1.1j  16 Feb 2021
+windows-latest | :heavy_check_mark: | 359 |  |  | 0 | OpenSSL 1.1.1i  8 Dec 2020
 RHEL 8.3 UBI | :heavy_check_mark: | 136 | /etc/pki/tls/cert.pem | /etc/pki/tls/certs | 0 | OpenSSL 1.1.1g FIPS  21 Apr 2020
 Ubuntu Bionic with ca-certificates | :heavy_check_mark: | 0 |  | /usr/lib/ssl/certs | 129 | OpenSSL 1.1.1  11 Sep 2018
 Ubuntu Focal with ca-certificates | :heavy_check_mark: | 0 |  | /usr/lib/ssl/certs | 129 | OpenSSL 1.1.1f  31 Mar 2020
-Ubuntu Focal with deadsnakes python3.9 | :x: | 0 |  |  | 0 | OpenSSL 1.1.1f  31 Mar 2020
+Ubuntu Focal with deadsnakes python3.9 | :heavy_check_mark: | 0 |  | /usr/lib/ssl/certs | 129 | OpenSSL 1.1.1f  31 Mar 2020
 Ubuntu Focal | :x: | 0 |  |  | 0 | OpenSSL 1.1.1f  31 Mar 2020
 Ubuntu Groovy | :x: | 0 |  |  | 0 | OpenSSL 1.1.1f  31 Mar 2020
 Ubuntu Xenial with ca-certificates | :heavy_check_mark: | 0 |  | /usr/lib/ssl/certs | 258 | OpenSSL 1.0.2g  1 Mar 2016
-
 
 
 ## issues

@@ -188,12 +188,12 @@
   },
   "name": "Gentoo Stage 3 latest",
   "openssl": {
-    "version": "OpenSSL 1.1.1g  21 Apr 2020",
+    "version": "OpenSSL 1.1.1j  16 Feb 2021",
     "version_info": [
       1,
       1,
       1,
-      7,
+      10,
       15
     ]
   },
@@ -209,19 +209,19 @@
       "SUPPORT_URL": "https://www.gentoo.org/support/"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1039-azure-x86_64-Intel-R-_Xeon-R-_Platinum_8171M_CPU_@_2.60GHz-with-gentoo-2.7",
+    "platform": "Linux-5.4.0-1040-azure-x86_64-Intel-R-_Xeon-R-_CPU_E5-2673_v3_@_2.40GHz-with-glibc2.2.5",
     "sys_platform": "linux"
   },
   "python": {
-    "executable": "/usr/lib/python-exec/python3.7/python3",
-    "version": "3.7.9 (default, Oct 21 2020, 22:22:16) \n[GCC 9.3.0]",
+    "executable": "/usr/lib/python-exec/python3.8/python3",
+    "version": "3.8.8 (default, Mar 14 2021, 22:30:07) \n[GCC 10.2.0]",
     "version_info": [
       3,
-      7,
-      9,
+      8,
+      8,
       "final",
       0
     ]
   },
-  "timestamp": "2021-02-10T15:50:29Z"
+  "timestamp": "2021-03-16T19:24:52Z"
 }

@@ -257,12 +257,12 @@
       "VERSION_ID": "19.3"
     },
     "os_name": "posix",
-    "platform": "Linux-5.4.0-1039-azure-x86_64-with-LinuxMint-19.3-tricia",
+    "platform": "Linux-5.4.0-1040-azure-x86_64-with-LinuxMint-19.3-tricia",
     "sys_platform": "linux"
   },
   "python": {
     "executable": "/usr/bin/python3",
-    "version": "3.6.9 (default, Oct  8 2020, 12:12:24) \n[GCC 8.4.0]",
+    "version": "3.6.9 (default, Jan 26 2021, 15:33:00) \n[GCC 8.4.0]",
     "version_info": [
       3,
       6,
@@ -271,5 +271,5 @@
       0
     ]
   },
-  "timestamp": "2021-02-10T15:50:33Z"
+  "timestamp": "2021-03-16T19:25:22Z"
 }
